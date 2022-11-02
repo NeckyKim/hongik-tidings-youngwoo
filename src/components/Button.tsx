@@ -5,11 +5,11 @@ import styles from './Button.module.css';
 
 
 type ButtonProps = {
-    id: number,
-    section: string,
-    title: string,
-    year: number,
-    month: number
+    id: number
+    section: string
+    title: string
+    year: 2021 | 2022
+    month: 3 | 5 | 9 | 11
 }
 
 

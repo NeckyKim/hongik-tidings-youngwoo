@@ -1,3 +1,7 @@
+import { HeaderBottom } from '../HeaderBottom';
+
+
+
 import styles from './Article01.module.css';
 
 
@@ -5,6 +9,8 @@ import styles from './Article01.module.css';
 export const Article01 = () => {
     return (
         <div>
+            <HeaderBottom title="The Last of Internet Explorer" />
+
             <div className={styles.titleContainer}>
                 <div className={styles.title}>
                     The Last of Internet Explorer
