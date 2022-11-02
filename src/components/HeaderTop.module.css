@@ -1,0 +1,41 @@
+.blank {
+    height: 70px;
+}
+
+.headerContainer {
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(50, 50, 50);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 70px;
+}
+
+.headerDivider {
+    width: 70vw;
+    height: 70px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    filter: invert();
+    cursor: pointer;
+}
+
+.headerMenu {
+    width: 100vw;
+    height: 500px;
+    background-color: rgb(240, 240, 240);
+}
