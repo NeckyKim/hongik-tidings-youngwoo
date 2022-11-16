@@ -1,29 +1,43 @@
-
-
 .footerContainer {
-    font-family: "JetBrains Mono";
     width: 70vw;
-    margin: 0px auto;
+    margin-left: 15vw;
+    margin-right: 15vw;
     margin-top: 100px;
     padding-top: 100px;
     border-top: 1px solid rgb(200, 200, 200);
 }
 
 .information {
-    font-family: "JetBrains Mono";
     font-size: 3rem;
     margin-bottom: 30px;
 }
 
 .elements {
-    font-family: "JetBrains Mono", "Pretendard-Regular";
     font-size: 1.2rem;
 }
 
 .allRightsReserved {
-    font-family: "JetBrains Mono";
     margin-top: 60px;
     margin-bottom: 60px;
     color: rgb(200, 200, 200);
     text-align: center;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .footerContainer {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .information {
+        font-size: 2rem;
+    }
+    
+    .elements {
+        font-size: 1rem;
+    }
 }

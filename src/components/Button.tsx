@@ -1,4 +1,5 @@
 import { useNavigate, NavigateFunction } from 'react-router-dom';
+import Badge from './Badge';
 
 import styles from './Button.module.css';
 
@@ -6,7 +7,7 @@ import styles from './Button.module.css';
 
 type ButtonProps = {
     id: number
-    section: string
+    section: "Architecture" | "Art" | "Global" | "Issue" | "Medical" | "Technology"
     title: string
     year: 2021 | 2022
     month: 3 | 5 | 9 | 11
@@ -14,7 +15,7 @@ type ButtonProps = {
 
 
 
-const MonthTranslator = (month: number) => {
+function MonthTranslator(month: number) {
     if (month === 3) {
         return "March"
     }
@@ -34,21 +35,17 @@ const MonthTranslator = (month: number) => {
 
 
 
-export const Button = (props: ButtonProps) => {
+export default function Button(props: ButtonProps) {
     const navigate: NavigateFunction = useNavigate()
 
     return (
         <div className={styles.buttonContainer}>
-            <div className={styles.button} onClick={() => { navigate(String(props.id)); }}>
+            <div className={styles.button} onClick={() => { navigate("/article/" + String(props.id)); }}>
                 <div className={styles.buttonImage}>
 
                 </div>
 
                 <div className={styles.buttonInfo}>
-                    <div className={styles.section}>
-                        {props.section}
-                    </div>
-
                     <div className={styles.title}>
                         {props.title}
                     </div>
@@ -56,6 +53,8 @@ export const Button = (props: ButtonProps) => {
                     <div className={styles.date}>
                         {MonthTranslator(props.month)} {props.year}
                     </div>
+
+                    <Badge section={props.section} />
                 </div>
             </div>
         </div>

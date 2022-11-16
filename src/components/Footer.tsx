@@ -2,10 +2,10 @@ import styles from './Footer.module.css';
 
 
 
-export const Footer = () => {
+export default function Footer() {
     var year: number = new Date().getFullYear();
 
-    
+
 
     return (
         <div className={styles.footerContainer}>
@@ -31,7 +31,7 @@ export const Footer = () => {
             </div>
 
             <div className={styles.allRightsReserved}>
-                {year}. Kim Young-Woo. All righst reserved.
+                {year}. archive-eng. All righst reserved.
             </div>
         </div>
     )

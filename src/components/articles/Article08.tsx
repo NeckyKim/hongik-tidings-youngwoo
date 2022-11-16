@@ -1,19 +1,19 @@
-import { HeaderBottom } from '../HeaderBottom';
+import HeaderBottom from '../HeaderBottom';
+
+import styles from './Article08.module.css';
 
 
 
-import styles from './Article01.module.css';
+const title: string = "The Last of Internet Explorer";
 
-
-
-export const Article01 = () => {
+export default function Article08() {
     return (
         <div>
-            <HeaderBottom title="The Last of Internet Explorer" />
+            <HeaderBottom title={title} />
 
             <div className={styles.titleContainer}>
                 <div className={styles.title}>
-                    The Last of Internet Explorer
+                    {title}
                 </div>
 
                 <div className={styles.writer}>

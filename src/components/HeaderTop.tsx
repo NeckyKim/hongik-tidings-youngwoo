@@ -5,7 +5,7 @@ import styles from './HeaderTop.module.css';
 
 
 
-export const HeaderTop = () => {
+export default function HeaderTop() {
     const navigate: NavigateFunction = useNavigate();
 
 
@@ -13,8 +13,12 @@ export const HeaderTop = () => {
     return (
         <div>
             <div className={styles.headerContainer}>
-                <div className={styles.headerDivider}>
-                    <img alt="card" className={styles.logo} src={process.env.PUBLIC_URL + "/logo/tidings-white.png"} onClick={() => { navigate("/"); }} />
+                <div className={styles.headerLogo} onClick={() => { navigate("/") }}>
+                    <img alt="logo" className={styles.headerIcon} src={process.env.PUBLIC_URL + "/logo/logo.png"} />
+
+                    <div className={styles.headerText}>
+                        archive-eng
+                    </div>
                 </div>
             </div>
 

@@ -6,6 +6,8 @@
     width: 100vw;
     height: 70px;
     background-color: rgb(50, 50, 50);
+    padding-left: 15vw;
+    padding-right: 15vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,30 +15,44 @@
     z-index: 1;
 }
 
-.headerDivider {
-    width: 70vw;
+.headerLogo {
+    width: 300px;
     height: 70px;
-    margin: 0px auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-columns: 80px 1fr 80px;
+    grid-template-columns: 70px 170px;
+    cursor: pointer;
 }
 
-.logo {
-    width: 70px;
+.headerIcon {
     height: 70px;
-    cursor: pointer;
 }
 
-.arrow {
-    width: 30px;
-    height: 30px;
-    margin: 20px;
-    filter: invert();
-    cursor: pointer;
+.headerText {
+    font-size: 1.5rem;
+    font-weight: 1000;
+    line-height: 70px;
+    text-align: left;
+    margin-left: 10px;
 }
 
-.headerMenu {
-    width: 100vw;
-    height: 500px;
-    background-color: rgb(240, 240, 240);
+
+
+@media screen and (max-width: 1000px) {
+    .headerContainer {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .headerLogo {
+        width: 210px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .headerText {
+        font-size: 1rem;
+    }
 }

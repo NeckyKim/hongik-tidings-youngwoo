@@ -10,7 +10,7 @@ type HeaderBottomProps = {
 
 
 
-export const HeaderBottom = (props: HeaderBottomProps) => {
+export default function HeaderBottom(props: HeaderBottomProps) {
     const [scrollPosition, setScrollPosition] = useState<number>(0);
 
     const updateScroll = () => {
