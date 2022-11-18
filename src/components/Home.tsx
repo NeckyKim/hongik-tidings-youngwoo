@@ -23,7 +23,7 @@ export default function Home() {
 
             <div className={styles.containerRight}>
                 <video muted autoPlay loop>
-                    <source src={require(".//Background.mp4")} type="video/mp4" />
+                    <source src={require("./Background.mp4")} type="video/mp4" />
                 </video>
             </div>
         </div>

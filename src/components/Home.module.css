@@ -1,19 +1,20 @@
 .container {
     width: 70vw;
-    height: 600px;
+    height: 700px;
     margin-left: 15vw;
     margin-right: 15vw;
+    margin-bottom: -100px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 700px;
 }
 
 .containerLeft {
-    height: 600px;
+    height: 700px;
     padding-top: 100px;
 }
 
 .containerRight video {
-    height: 600px;
+    height: 700px;
 }
 
 .button {
@@ -32,7 +33,7 @@
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
     .container {
         width: 90vw;
         height: fit-content;

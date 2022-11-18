@@ -1,4 +1,4 @@
-import { useNavigate, NavigateFunction, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Badge from './Badge';
 
@@ -37,29 +37,23 @@ function MonthTranslator(month: number) {
 
 
 export default function Button(props: ButtonProps) {
-    const navigate: NavigateFunction = useNavigate()
-
     return (
-        <div className={styles.buttonContainer}>
-            <Link to={"/article/" + String(props.id)}>
-                <div className={styles.button}>
-                    <div className={styles.buttonImage}>
+        <Link to={"/article/" + String(props.id)} className={styles.button}>
+                <div className={styles.buttonImage}>
 
-                    </div>
-
-                    <div className={styles.buttonInfo}>
-                        <div className={styles.title}>
-                            {props.title}
-                        </div>
-
-                        <div className={styles.date}>
-                            {MonthTranslator(props.month)} {props.year}
-                        </div>
-
-                        <Badge section={props.section} />
-                    </div>
                 </div>
-            </Link>
-        </div>
+
+                <div className={styles.buttonInfo}>
+                    <div className={styles.title}>
+                        {props.title}
+                    </div>
+
+                    <div className={styles.date}>
+                        {MonthTranslator(props.month)} {props.year}
+                    </div>
+
+                    <Badge section={props.section} />
+                </div>
+        </Link>
     )
 }

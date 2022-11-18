@@ -26,8 +26,12 @@ export default function Footer() {
                 kyeryoong@gmail.com
             </div>
 
-            <div className={styles.elements}>
+            <div className={styles.elements} onClick={() => {window.open("https://github.com/NeckyKim")}}>
                 github.com/NeckyKim
+            </div>
+
+            <div className={styles.elements} onClick={() => {window.open("https://www.linkedin.com/in/young-woo-kim-493463246/")}}>
+                linkedin.com/in/young-woo-kim
             </div>
 
             <div className={styles.allRightsReserved}>
