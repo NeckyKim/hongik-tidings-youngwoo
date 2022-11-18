@@ -1,0 +1,41 @@
+.container {
+    width: 70vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.fourZeroFour {
+    width: 600px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.mainText {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.subText {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .fourZeroFour {
+        width: 60vw;
+        margin-bottom: 20px;
+    }
+
+    .mainText {
+        font-size: 3rem;
+    }
+    
+    .subText {
+        font-size: 1rem;
+    }
+    
+}

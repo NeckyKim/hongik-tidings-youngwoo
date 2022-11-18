@@ -1,25 +1,62 @@
-.buttonContainer {
+.container {
     width: 70vw;
-    margin: 0px auto;
-    margin-top: 50px;
+    height: 600px;
+    margin-left: 15vw;
+    margin-right: 15vw;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
 }
 
+.containerLeft {
+    height: 600px;
+    padding-top: 100px;
+}
 
+.containerRight video {
+    height: 600px;
+}
 
-@media screen and (max-width: 1700px) {
-    .buttonContainer {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.button {
+    font-size: 2rem;
+    width: fit-content;
+    height: 60px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 50px;
+    text-decoration: none;
+    display: block;
+}
+
+.button:hover {
+    font-size: 3rem;
 }
 
 
 
 @media screen and (max-width: 1000px) {
-    .buttonContainer {
+    .container {
         width: 90vw;
-        grid-template-columns: repeat(1, 1fr);
+        height: fit-content;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        grid-template-columns: 1fr;
+    }
+
+    .containerLeft {
+        height: 250px;
+        padding-top: 50px;
+    }
+
+    .containerRight video {
+        height: 90vw;
+    }
+
+    .button {
+        font-size: 1.5rem;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .button:hover {
+        font-size: 2.5rem;
     }
 }

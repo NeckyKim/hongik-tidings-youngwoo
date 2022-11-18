@@ -1,4 +1,5 @@
-import { useNavigate, NavigateFunction } from 'react-router-dom';
+import { useNavigate, NavigateFunction, Link } from 'react-router-dom';
+
 import Badge from './Badge';
 
 import styles from './Button.module.css';
@@ -40,23 +41,25 @@ export default function Button(props: ButtonProps) {
 
     return (
         <div className={styles.buttonContainer}>
-            <div className={styles.button} onClick={() => { navigate("/article/" + String(props.id)); }}>
-                <div className={styles.buttonImage}>
+            <Link to={"/article/" + String(props.id)}>
+                <div className={styles.button}>
+                    <div className={styles.buttonImage}>
 
-                </div>
-
-                <div className={styles.buttonInfo}>
-                    <div className={styles.title}>
-                        {props.title}
                     </div>
 
-                    <div className={styles.date}>
-                        {MonthTranslator(props.month)} {props.year}
-                    </div>
+                    <div className={styles.buttonInfo}>
+                        <div className={styles.title}>
+                            {props.title}
+                        </div>
 
-                    <Badge section={props.section} />
+                        <div className={styles.date}>
+                            {MonthTranslator(props.month)} {props.year}
+                        </div>
+
+                        <Badge section={props.section} />
+                    </div>
                 </div>
-            </div>
+            </Link>
         </div>
     )
 }

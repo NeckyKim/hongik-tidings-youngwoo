@@ -4,6 +4,7 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .buttonImage {
