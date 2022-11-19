@@ -13,25 +13,37 @@ export default function Footer() {
                 Information
             </div>
 
-            <div className={styles.elements}>
+            <div className={styles.name}>
                 Kim Young-Woo
             </div>
 
-            <div className={styles.elements}>
+            <div className={styles.name}>
                 김영우
             </div>
             <br />
 
             <div className={styles.elements}>
-                kyeryoong@gmail.com
+                <img alt="e-mail" className={styles.elementsImage} src={process.env.PUBLIC_URL + "/logo/email.png"} />
+
+                <div className={styles.elementsText}>
+                    kyeryoong@gmail.com
+                </div>
             </div>
 
-            <div className={styles.elements} onClick={() => {window.open("https://github.com/NeckyKim")}}>
-                github.com/NeckyKim
+            <div className={styles.elements} onClick={() => { window.open("https://github.com/NeckyKim") }}>
+            <img alt="GitHub" className={styles.elementsImage} src={process.env.PUBLIC_URL + "/logo/github.png"} />
+
+                <div className={styles.elementsText}>
+                    github.com/NeckyKim
+                </div>
             </div>
 
-            <div className={styles.elements} onClick={() => {window.open("https://www.linkedin.com/in/young-woo-kim-493463246/")}}>
-                linkedin.com/in/young-woo-kim
+            <div className={styles.elements} onClick={() => { window.open("https://www.linkedin.com/in/young-woo-kim-493463246/") }}>
+            <img alt="LinkedIn" className={styles.elementsImage} src={process.env.PUBLIC_URL + "/logo/linkedin.png"} />
+
+                <div className={styles.elementsText}>
+                    linkedin.com/in/young-woo-kim
+                </div>
             </div>
 
             <div className={styles.allRightsReserved}>

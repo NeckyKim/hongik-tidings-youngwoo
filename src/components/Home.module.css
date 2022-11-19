@@ -18,7 +18,8 @@
 }
 
 .button {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 1000;
     width: fit-content;
     height: 60px;
     color: rgb(0, 0, 0);
@@ -28,7 +29,7 @@
 }
 
 .button:hover {
-    font-size: 3rem;
+    font-size: 4.5rem;
 }
 
 
@@ -52,7 +53,7 @@
     }
 
     .button {
-        font-size: 1.5rem;
+        font-size: 2rem;
         height: 40px;
         margin-bottom: 20px;
     }

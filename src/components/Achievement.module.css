@@ -1,0 +1,107 @@
+.container {
+    width: 70vw;
+    height: fit-content;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+}
+
+.containerHeaderClicked {
+    font-size: 2.5rem;
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+
+.containerHeaderNotClicked {
+    font-size: 2.5rem;
+    font-weight: 1000;
+    margin-bottom: 10px;
+    color: rgb(200, 200, 200);
+    cursor: pointer;
+}
+
+.achievementContainer {
+    width: 34vw;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.achievementInfo {
+    padding: 40px;
+    padding-top: 0px;
+}
+
+.achievementImage {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.achievementName {
+    font-size: 2rem;
+    font-weight: 1000;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    border-top:  1px solid rgb(220, 220, 220);
+    word-break: keep-all;
+}
+
+.achievementAgency {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    word-break: keep-all;
+}
+
+.achievementDetails {
+    font-size: 1rem;
+    color: rgb(150, 150, 150);
+    word-break: keep-all;
+    text-align: justify;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .containerHeaderClicked {
+        font-size: 2rem;
+    }
+    
+    .containerHeaderNotClicked {
+        font-size: 2rem;
+    }
+
+    .achievementContainer {
+        width: 90vw;
+        margin-bottom: 5vw;
+    }
+
+    .achievementInfo {
+        padding: 5vw;
+        padding-top: 0px;
+    }
+
+    .achievementName {
+        font-size: 1.5rem;
+        padding-top: 5vw;
+    }
+    
+    .achievementAgency {
+        font-size: 1rem;
+    }
+    
+    .achievementDetails {
+        font-size: 0.8rem;
+    }
+}

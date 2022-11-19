@@ -26,8 +26,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/archive" element={<Archive />} />
-                    {/* <Route path="/achievement" element={<Achievement />} />
-                    <Route path="/aboutme" element={<AboutMe />} /> */}
+                    <Route path="/achievement" element={<Achievement />} />
+                    {/* <Route path="/aboutme" element={<AboutMe />} /> */}
                     <Route path="/article/8" element={<Article08 />} />
 
                     <Route path="*" element={<NotFound />} />

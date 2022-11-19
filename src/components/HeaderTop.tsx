@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useNavigate, NavigateFunction } from 'react-router-dom';
 
 import styles from './HeaderTop.module.css';

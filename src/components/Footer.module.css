@@ -10,17 +10,43 @@
 .information {
     width: fit-content;
     font-size: 2rem;
-    font-size: 1000;
+    font-weight: 1000;
     margin-bottom: 30px;
+    color: rgb(150, 150, 150);
+}
+
+.name {
+    font-size: 1.2rem;
+    color: rgb(150, 150, 150);
+    margin-bottom: 5px;
 }
 
 .elements {
-    width: fit-content;
-    font-size: 1.2rem;
+    height: 30px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 30px 280px;
 }
 
 .elements:nth-child(6) {
     cursor: pointer;
+}
+
+.elements:nth-child(7) {
+    cursor: pointer;
+}
+
+.elementsImage {
+    width: 30px;
+    padding: 5px;
+    margin-left: -5px;
+}
+
+.elementsText {
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.2rem;
+    color: rgb(180, 180, 180);
 }
 
 .allRightsReserved {
@@ -37,14 +63,24 @@
         width: 90vw;
         margin-left: 5vw;
         margin-right: 5vw;
+        padding-top: 50px;
         grid-template-columns: repeat(1, 1fr);
     }
 
     .information {
         font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .elements {
+        margin-bottom: 0px;
     }
     
-    .elements {
-        font-size: 1rem;
+    .elementsText {
+        font-size: 0.8rem;
+    }
+
+    .allRightsReserved {
+        font-size: 0.8rem;
     }
 }
