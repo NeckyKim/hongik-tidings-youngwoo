@@ -1,46 +1,63 @@
-# Getting Started with Create React App
+<br><br><br>
+<p align="center"><img src="./public/logos/logo.png" width="600" height="=200"></p>
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+# About this Project
 
-### `npm start`
+#### This project was created to introduce my personal portfolios and projects. Also, it aims to increase front-end skills by using TypeScript Programming Language and React Framework together.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### You can check the current progress of the project by accessing the site below.
+### [archive-eng.site](https://archive-eng.site/)
+<br><br><br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# About Me
 
-### `npm run build`
+#### Name &nbsp; | &nbsp; Young-Woo Kim
+#### Major &nbsp; | &nbsp; Hongik University Computer Engineering
+#### Position &nbsp; | &nbsp; Frontend Engineer
+<br><br><br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Technologies and Software Used
 
-### `npm run eject`
+#### Programming Languages
+<br/>
+<p align="center">
+<img src="./public/softwares/typescript.png" height="70">
+</p>
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Frontend Server
+<br/>
+<p align="center">
+<img src="./public/softwares/react.png" height="60">
+</p>
+<br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Deployment
+<br/>
+<p align="center">
+<img src="./public/softwares/netlify.png" height="60">
+</p>
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Domain Name Service
+<br/>
+<p align="center">
+<img src="./public/softwares/gabia.png" height="60">
+</p>
+<br>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Version Control
+<br/>
+<p align="center">
+<img src="./public/softwares/git.png" height="50">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="./public/softwares/github.png" height="50">
+</p>
+<br><br><br>

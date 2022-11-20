@@ -23,7 +23,7 @@ export default function Footer() {
             <br />
 
             <div className={styles.elements}>
-                <img alt="e-mail" className={styles.elementsImage} src={process.env.PUBLIC_URL + "/logo/email.png"} />
+                <img alt="e-mail" className={styles.elementsImage} src={process.env.PUBLIC_URL + "/logos/email.png"} />
 
                 <div className={styles.elementsText}>
                     kyeryoong@gmail.com
@@ -31,7 +31,7 @@ export default function Footer() {
             </div>
 
             <div className={styles.elements} onClick={() => { window.open("https://github.com/NeckyKim") }}>
-            <img alt="GitHub" className={styles.elementsImage} src={process.env.PUBLIC_URL + "/logo/github.png"} />
+            <img alt="GitHub" className={styles.elementsImage} src={process.env.PUBLIC_URL + "/logos/github.png"} />
 
                 <div className={styles.elementsText}>
                     github.com/NeckyKim
@@ -39,7 +39,7 @@ export default function Footer() {
             </div>
 
             <div className={styles.elements} onClick={() => { window.open("https://www.linkedin.com/in/young-woo-kim-493463246/") }}>
-            <img alt="LinkedIn" className={styles.elementsImage} src={process.env.PUBLIC_URL + "/logo/linkedin.png"} />
+            <img alt="LinkedIn" className={styles.elementsImage} src={process.env.PUBLIC_URL + "/logos/linkedin.png"} />
 
                 <div className={styles.elementsText}>
                     linkedin.com/in/young-woo-kim

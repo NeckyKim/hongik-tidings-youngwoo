@@ -22,7 +22,7 @@ type BadgeProps = {
 function Badge(props: BadgeProps) {
     return (
         <div className={styles.badgeContainer}>
-            <img alt="logo" className={styles.badgeIcon} src={process.env.PUBLIC_URL + "/section/" + props.section + ".png"} />
+            <img alt="Badge" className={styles.badgeIcon} src={process.env.PUBLIC_URL + "/sections/" + props.section + ".png"} />
 
             <div className={styles.badgeText}>
                 {props.section}
