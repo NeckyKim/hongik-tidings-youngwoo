@@ -12,8 +12,8 @@ export default function Home() {
                     Archive
                 </Link>
 
-                <Link to={"/achievement"} className={styles.button}>
-                    Achievement
+                <Link to={"/achievements"} className={styles.button}>
+                    Achievements
                 </Link>
 
                 <Link to={"/aboutme"} className={styles.button}>

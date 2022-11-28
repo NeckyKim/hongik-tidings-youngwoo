@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from './components/Home';
 import Archive from './components/Archive';
-import Achievement from './components/Achievement';
+import Achievements from './components/Achievements';
 import AboutMe from './components/AboutMe';
 
 import HeaderTop from './components/HeaderTop';
@@ -26,7 +26,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/archive" element={<Archive />} />
-                    <Route path="/achievement" element={<Achievement />} />
+                    <Route path="/achievements" element={<Achievements />} />
                     {/* <Route path="/aboutme" element={<AboutMe />} /> */}
                     <Route path="/article/8" element={<Article08 />} />
 
