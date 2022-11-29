@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+
 .titleContainer1 {
     width: 100vw;
     height: 500px;
@@ -41,6 +43,7 @@
 .title {
     font-size: 4rem;
     font-family: 'JetBrains Mono';
+    font-weight: 600;
     line-height: 60px;
     color: rgb(255, 255, 255);
     position: absolute;
@@ -125,7 +128,7 @@
 @media screen and (max-width: 1000px) {
     .titleContainer1 {
         height: 40vw;
-        grid-template-columns: 0fr 40vw 60vw;
+        grid-template-columns: 0fr 47.2vw calc(100vw - 47.2vw);
         margin-bottom: 0px;
     }
     
@@ -139,7 +142,7 @@
     }
     
     .image13 {
-        width: 60vw;
+        width: calc(100vw - 47.2vw);
         height: 40vw;
     }
 
@@ -172,13 +175,13 @@
 
     .writer {
         font-size: min(1rem, 3vw);
-        top: calc(140px + 40vw);
+        top: calc(140px + 38vw);
         right: 5vw;
     }
     
     .reviser {
         font-size: min(1rem, 3vw);
-        top: calc(140px + 40vw + min(4vw, 30px));
+        top: calc(140px + 38vw + min(4vw, 30px));
         right: 5vw;
     }
 }
