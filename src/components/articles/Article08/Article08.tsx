@@ -1,5 +1,4 @@
 import HeaderBottom from '../../header/HeaderBottom';
-import Article08Title from './Article08Title';
 
 import { ResponsiveBar } from '@nivo/bar';
 import { ResponsiveLine } from '@nivo/line';
@@ -132,7 +131,19 @@ export default function Article08() {
         <div>
             <HeaderBottom title={title} />
 
-            <Article08Title />
+            <div className={styles.titleContainer}>
+                <img alt="Article Title" className={styles.image1} src={process.env.PUBLIC_URL + "/articles/08/1.png"} />
+
+                <img alt="Article Title" className={styles.image2} src={process.env.PUBLIC_URL + "/articles/08/2.png"} />
+
+                <div className={styles.writer}>
+                    Written by Kim Young-Woo
+                </div>
+
+                <div className={styles.reviser}>
+                    Revised by Prof. Neil Alexander Cole
+                </div>
+            </div>
 
 
 
@@ -140,7 +151,7 @@ export default function Article08() {
                 <div>
                     <img alt="Image" className={styles.image3} src={process.env.PUBLIC_URL + "/articles/08/3.jpg"} />
 
-                    <div style={{marginTop: "20px", marginBottom: "50px", color: "rgb(150, 150, 150)", textAlign: "left"}}>
+                    <div style={{ marginTop: "20px", marginBottom: "50px", color: "rgb(150, 150, 150)", textAlign: "left" }}>
                         (Source) Reuters, www.reuters.com
                     </div>
                 </div>
@@ -167,7 +178,7 @@ export default function Article08() {
                 <Chart1 />
             </div>
 
-            <div style={{marginTop: "20px", marginBottom: "50px", color: "rgb(150, 150, 150)", textAlign: "center"}}>
+            <div style={{ marginTop: "20px", marginBottom: "50px", color: "rgb(150, 150, 150)", textAlign: "center" }}>
                 (Source) gs.statcounter.com
             </div>
 
@@ -175,7 +186,7 @@ export default function Article08() {
                 <Chart2 />
             </div>
 
-            <div style={{marginTop: "20px", marginBottom: "50px", color: "rgb(150, 150, 150)", textAlign: "center"}}>
+            <div style={{ marginTop: "20px", marginBottom: "50px", color: "rgb(150, 150, 150)", textAlign: "center" }}>
                 (Source) gs.statcounter.com, netmarketshare.com/browser-market.share.aspx
             </div>
 
@@ -191,7 +202,7 @@ export default function Article08() {
 
             <img alt="Image" className={styles.image4} src={process.env.PUBLIC_URL + "/articles/08/4.png"} />
 
-            <div style={{marginTop: "20px", marginBottom: "50px", color: "rgb(150, 150, 150)", textAlign: "center"}}>
+            <div style={{ marginTop: "20px", marginBottom: "50px", color: "rgb(150, 150, 150)", textAlign: "center" }}>
                 (Source) Wikipedia, en.wikipedia.org/wiki/ActiveX
             </div>
 
@@ -208,18 +219,18 @@ export default function Article08() {
             <div className={styles.image5Container}>
                 <img alt="Image" className={styles.image51} src={process.env.PUBLIC_URL + "/articles/08/6.png"} />
 
-                <div style={{fontSize: "2rem"}}>
+                <div style={{ fontSize: "2rem" }}>
                     vs.
                 </div>
 
                 <img alt="Image" className={styles.image52} src={process.env.PUBLIC_URL + "/articles/08/5.png"} />
             </div>
 
-            <div style={{color: "rgb(150, 150, 150)", textAlign: "center"}}>
+            <div style={{ color: "rgb(150, 150, 150)", textAlign: "center" }}>
                 (Source) Logos Download, logos-download.com
             </div>
 
-            <div style={{marginBottom: "50px", color: "rgb(150, 150, 150)", textAlign: "center"}}>
+            <div style={{ marginBottom: "50px", color: "rgb(150, 150, 150)", textAlign: "center" }}>
                 (Source) Wikipedia, en.wikipedia.org/wiki/JavaScript
             </div>
 

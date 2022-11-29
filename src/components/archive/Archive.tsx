@@ -10,7 +10,7 @@ export default function Archive() {
         <div className={styles.buttonContainer}>
             {/* <Button id={articles[0].id} section={articles[0].section} title={articles[0].title} year={articles[0].year} month={articles[0].month} /> */}
             {/* <Button id={articles[1].id} section={articles[1].section} title={articles[1].title} year={articles[1].year} month={articles[1].month} /> */}
-            {/* <Button id={articles[2].id} section={articles[2].section} title={articles[2].title} year={articles[2].year} month={articles[2].month} /> */}
+            <Button id={articles[2].id} section={articles[2].section} title={articles[2].title} year={articles[2].year} month={articles[2].month} />
             {/* <Button id={articles[3].id} section={articles[3].section} title={articles[3].title} year={articles[3].year} month={articles[3].month} /> */}
             {/* <Button id={articles[4].id} section={articles[4].section} title={articles[4].title} year={articles[4].year} month={articles[4].month} /> */}
             {/* <Button id={articles[5].id} section={articles[5].section} title={articles[5].title} year={articles[5].year} month={articles[5].month} /> */}

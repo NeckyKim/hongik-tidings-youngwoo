@@ -1,7 +1,7 @@
 .titleContainer {
     width: 100vw;
     height: 500px;
-    background-color: rgb(30, 187, 238);
+    background-color: rgb(0, 167, 229);
     margin-bottom: 50px;
 }
 
@@ -90,8 +90,37 @@
 
 
 @media screen and (max-width: 1000px) {
+    .titleContainer {
+        width: 100vw;
+        height: 60vw;
+    }
+
+    .image1 {
+        width: 70vw;
+        top: calc(140px + 5vw);
+        left: 15vw;
+    }
+
+    .image2 {
+        width: 50vw;
+        top: calc(140px + 40vw);
+        left: 40vw;
+    }
+
     .image3 {
         width: 90vw;
+    }
+
+    .writer {
+        font-size: 2vw;
+        top: calc(140px + 45vw);
+        left: calc(40vw + 30px);
+    }
+    
+    .reviser {
+        font-size: 2vw;
+        top: calc(140px + 49vw);
+        left: calc(40vw + 30px);
     }
 
     .introductionContainer {
