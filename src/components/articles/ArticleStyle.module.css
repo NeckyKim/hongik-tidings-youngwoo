@@ -11,7 +11,7 @@
     width: 70vw;
     font-size: 1.2rem;
     margin: 0px auto;
-    margin-bottom: 50px;
+    margin-top: 40px;
     text-indent: 4rem;
     text-align: justify;
 }
@@ -23,5 +23,7 @@
 
     .paragraph {
         width: 90vw;
+        margin-top: 20px;
+        text-indent: 2rem;
     }
 }

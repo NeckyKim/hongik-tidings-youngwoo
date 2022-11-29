@@ -5,6 +5,20 @@
     margin-bottom: 50px;
 }
 
+.introductionContainer {
+    width: 70vw;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+}
+
+.introductionParagraph {
+    width: 100%;
+    font-size: 1.2rem;
+    text-indent: 4rem;
+    text-align: justify;
+}
+
 .image1 {
     width: 600px;
     position: absolute;
@@ -32,7 +46,7 @@
 }
 
 .image3 {
-    width: 500px;
+    width: 100%;
     display: block;
     margin: 0px auto;
     border-radius: 5px;
@@ -50,7 +64,8 @@
     height: 160px;
     margin: 0px auto;
     display: grid;
-    grid-template-columns: 240px 60px 200px;
+    grid-template-columns: 4fr 1fr 4fr;
+    gap: 20px;
     align-items: center;
     justify-items: center;
 }
@@ -61,24 +76,6 @@
 
 .image52 {
     height: 160px;
-    padding: 20px;
-}
-
-
-
-.introductionContainer {
-    width: 70vw;
-    margin: 0px auto;
-    display: grid;
-    grid-template-columns: 500px 1fr;
-    gap: 50px;
-}
-
-.introductionParagraph {
-    width: 100%;
-    font-size: 1.2rem;
-    text-indent: 4rem;
-    text-align: justify;
 }
 
 .chart {
@@ -89,10 +86,20 @@
 
 
 
+
 @media screen and (max-width: 1000px) {
     .titleContainer {
         width: 100vw;
         height: 60vw;
+    }
+
+    .introductionContainer {
+        width: 90vw;
+        display: block;
+    }
+
+    .introductionParagraph {
+        text-indent: 2rem;
     }
 
     .image1 {
@@ -111,6 +118,19 @@
         width: 90vw;
     }
 
+    .image5Container {
+        width: 90vw;
+        gap: 10px;
+    }
+
+    .image51 {
+        height: min(160px, 30vw);
+    }
+    
+    .image52 {
+        height: min(160px, 30vw);
+    }
+
     .writer {
         font-size: 2vw;
         top: calc(140px + 45vw);
@@ -121,11 +141,6 @@
         font-size: 2vw;
         top: calc(140px + 49vw);
         left: calc(40vw + 30px);
-    }
-
-    .introductionContainer {
-        width: 90vw;
-        grid-template-columns: none;
     }
 
     .chart {

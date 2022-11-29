@@ -156,18 +156,16 @@ export default function Article08() {
                     </div>
                 </div>
 
-                <div>
-                    <div className={styles.introductionParagraph}>
-                        Anyone who has used a computer as a child may have experienced using Internet Explorer when surfing the Internet. In June 2022, Microsoft officially announced that it would end technical support for Internet Explorer, which has been running for 20 years. Microsoft has been continuously issuing notices of an end to support for the browser. Instead, it has been actively promoting its new web browser, Microsoft Edge.
-                    </div>
-                    <br />
+                <div />
 
-                    <div className={styles.introductionParagraph}>
-                        Internet Explorer once had its best time, especially in 2003, occupying 90 percent of the market share. Netscape Navigator was defeated by Internet Explorer in the late 90s and Navigator introduced its program code as an open source in 2002. Based on this code, the Mozilla Foundation launched a new browser called Firefox. It began to introduce new features and continuously develop its software, increasing its share slightly. However, in 2008, Google Chrome burst onto the scene and turned the whole game around in the browser war. It has a really fast speed and nice-looking interface and has become the most popular browser, with more than 60 percent of the market share. Today, Internet Explorer is no different from other old-fashioned artifacts that no one uses, as it had less than 2% of the market share in the past six months. Let’s find out how the browser that dominated an era came to fall.
-                    </div>
+                <div className={styles.introductionParagraph}>
+                    Anyone who has used a computer as a child may have experienced using Internet Explorer when surfing the Internet. In June 2022, Microsoft officially announced that it would end technical support for Internet Explorer, which has been running for 20 years. Microsoft has been continuously issuing notices of an end to support for the browser. Instead, it has been actively promoting its new web browser, Microsoft Edge.
                 </div>
             </div>
 
+            <div className={articleStyles.paragraph}>
+                Internet Explorer once had its best time, especially in 2003, occupying 90 percent of the market share. Netscape Navigator was defeated by Internet Explorer in the late 90s and Navigator introduced its program code as an open source in 2002. Based on this code, the Mozilla Foundation launched a new browser called Firefox. It began to introduce new features and continuously develop its software, increasing its share slightly. However, in 2008, Google Chrome burst onto the scene and turned the whole game around in the browser war. It has a really fast speed and nice-looking interface and has become the most popular browser, with more than 60 percent of the market share. Today, Internet Explorer is no different from other old-fashioned artifacts that no one uses, as it had less than 2% of the market share in the past six months. Let’s find out how the browser that dominated an era came to fall.
+            </div>
 
 
             <div className={articleStyles.subtitle}>
@@ -178,7 +176,7 @@ export default function Article08() {
                 <Chart1 />
             </div>
 
-            <div style={{ marginTop: "20px", marginBottom: "50px", color: "rgb(150, 150, 150)", textAlign: "center" }}>
+            <div style={{ marginTop: "20px", color: "rgb(150, 150, 150)", textAlign: "center" }}>
                 (Source) gs.statcounter.com
             </div>
 
@@ -186,7 +184,7 @@ export default function Article08() {
                 <Chart2 />
             </div>
 
-            <div style={{ marginTop: "20px", marginBottom: "50px", color: "rgb(150, 150, 150)", textAlign: "center" }}>
+            <div style={{ marginTop: "20px", color: "rgb(150, 150, 150)", textAlign: "center" }}>
                 (Source) gs.statcounter.com, netmarketshare.com/browser-market.share.aspx
             </div>
 
@@ -202,7 +200,7 @@ export default function Article08() {
 
             <img alt="Image" className={styles.image4} src={process.env.PUBLIC_URL + "/articles/08/4.png"} />
 
-            <div style={{ marginTop: "20px", marginBottom: "50px", color: "rgb(150, 150, 150)", textAlign: "center" }}>
+            <div style={{ marginTop: "20px", color: "rgb(150, 150, 150)", textAlign: "center" }}>
                 (Source) Wikipedia, en.wikipedia.org/wiki/ActiveX
             </div>
 
@@ -217,20 +215,20 @@ export default function Article08() {
             </div>
 
             <div className={styles.image5Container}>
-                <img alt="Image" className={styles.image51} src={process.env.PUBLIC_URL + "/articles/08/6.png"} />
+                <img alt="Image" className={styles.image51} src={process.env.PUBLIC_URL + "/articles/08/5.png"} />
 
                 <div style={{ fontSize: "2rem" }}>
                     vs.
                 </div>
 
-                <img alt="Image" className={styles.image52} src={process.env.PUBLIC_URL + "/articles/08/5.png"} />
+                <img alt="Image" className={styles.image52} src={process.env.PUBLIC_URL + "/articles/08/6.png"} />
             </div>
 
             <div style={{ color: "rgb(150, 150, 150)", textAlign: "center" }}>
                 (Source) Logos Download, logos-download.com
             </div>
 
-            <div style={{ marginBottom: "50px", color: "rgb(150, 150, 150)", textAlign: "center" }}>
+            <div style={{ color: "rgb(150, 150, 150)", textAlign: "center" }}>
                 (Source) Wikipedia, en.wikipedia.org/wiki/JavaScript
             </div>
 
