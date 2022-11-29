@@ -151,7 +151,7 @@ export default function Article08() {
                 <div>
                     <img alt="Image" className={styles.image3} src={process.env.PUBLIC_URL + "/articles/08/3.jpg"} />
 
-                    <div style={{ marginTop: "20px", marginBottom: "50px", color: "rgb(150, 150, 150)", textAlign: "left" }}>
+                    <div className={articleStyles.source} style={{marginTop: "20px", marginBottom: "20px"}}>
                         (Source) Reuters, www.reuters.com
                     </div>
                 </div>
@@ -176,7 +176,7 @@ export default function Article08() {
                 <Chart1 />
             </div>
 
-            <div style={{ marginTop: "20px", color: "rgb(150, 150, 150)", textAlign: "center" }}>
+            <div className={articleStyles.source}>
                 (Source) gs.statcounter.com
             </div>
 
@@ -184,7 +184,7 @@ export default function Article08() {
                 <Chart2 />
             </div>
 
-            <div style={{ marginTop: "20px", color: "rgb(150, 150, 150)", textAlign: "center" }}>
+            <div className={articleStyles.source}>
                 (Source) gs.statcounter.com, netmarketshare.com/browser-market.share.aspx
             </div>
 
@@ -200,7 +200,7 @@ export default function Article08() {
 
             <img alt="Image" className={styles.image4} src={process.env.PUBLIC_URL + "/articles/08/4.png"} />
 
-            <div style={{ marginTop: "20px", color: "rgb(150, 150, 150)", textAlign: "center" }}>
+            <div className={articleStyles.source}>
                 (Source) Wikipedia, en.wikipedia.org/wiki/ActiveX
             </div>
 
@@ -224,11 +224,11 @@ export default function Article08() {
                 <img alt="Image" className={styles.image52} src={process.env.PUBLIC_URL + "/articles/08/6.png"} />
             </div>
 
-            <div style={{ color: "rgb(150, 150, 150)", textAlign: "center" }}>
+            <div className={articleStyles.source}>
                 (Source) Logos Download, logos-download.com
             </div>
 
-            <div style={{ color: "rgb(150, 150, 150)", textAlign: "center" }}>
+            <div className={articleStyles.source}>
                 (Source) Wikipedia, en.wikipedia.org/wiki/JavaScript
             </div>
 
@@ -244,7 +244,7 @@ export default function Article08() {
                 The two problems mentioned earlier, ActiveX and not using standards, consequently have a significant impact on browsing speed and performance. Another critical reason for the collapse of Internet Explorer is that it isn't supported by operating systems other than Windows. In the late 2000s, such smartphones as the iPhone and Android completely changed the ecosystem of web browsers. The website usage environment, which used to be focused on PCs, has rapidly changed to a mobile environment. As a result, multi-platform and cross-browsing support have become extremely important. Microsoft's single-platform web environment due to market monopoly became a bad choice, causing its browser’s downfall. It later released the Internet Explorer Mobile Version, but it was too late.
             </div>
 
-            <div className={articleStyles.paragraph}>
+            <div className={articleStyles.conclusion}>
                 The second browser war, which was expected to be a battle between Firefox and Internet Explorer, unexpectedly ended in a huge victory for Google Chrome. As a result, Internet Explorer, which won the first browser war, was defeated in the second war with Chrome and has disappeared into history.
             </div>
         </div>

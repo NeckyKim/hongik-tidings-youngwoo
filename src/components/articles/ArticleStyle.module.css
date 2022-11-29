@@ -16,6 +16,23 @@
     text-align: justify;
 }
 
+.source {
+    font-size: 1rem;
+    color: rgb(150, 150, 150);
+    text-align: center;
+}
+
+.conclusion {
+    width: 70vw;
+    font-size: 1.2rem;
+    margin: 0px auto;
+    margin-top: 100px;
+    text-indent: 4rem;
+    text-align: justify;
+}
+
+
+
 @media screen and (max-width: 1000px) {
     .subtitle {
         width: 90vw;
@@ -23,7 +40,33 @@
 
     .paragraph {
         width: 90vw;
-        margin-top: 20px;
         text-indent: 2rem;
+    }
+
+    .conclusion {
+        width: 90vw;
+        text-indent: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .subtitle {
+        font-size: 1.2rem;
+        margin-top: 60px;
+    }
+
+    .paragraph {
+        font-size: 1rem;
+    }
+
+    .conclusion {
+        font-size: 1rem;
+        margin-top: 60px;
+    }
+
+    .source {
+        font-size: 0.7rem;
     }
 }
