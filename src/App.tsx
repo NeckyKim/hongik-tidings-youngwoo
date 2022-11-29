@@ -1,15 +1,15 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Home from './components/Home';
-import Archive from './components/Archive';
-import Achievements from './components/Achievements';
-import AboutMe from './components/AboutMe';
+import Home from './components/home/Home';
+import Archive from './components/archive/Archive';
+import Achievements from './components/achievements/Achievements';
+import AboutMe from './components/aboutMe/AboutMe';
 
-import HeaderTop from './components/HeaderTop';
-import Footer from './components/Footer';
-import NotFound from './components/NotFound';
+import HeaderTop from './components/header/HeaderTop';
+import Footer from './components/footer/Footer';
+import NotFound from './components/notFound/NotFound';
 
-import Article08 from './components/articles/Article08';
+import Article08 from './components/articles/Article08/Article08';
 
 import './App.css';
 

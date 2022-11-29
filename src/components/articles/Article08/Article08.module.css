@@ -35,12 +35,36 @@
     width: 500px;
     display: block;
     margin: 0px auto;
+    border-radius: 5px;
 }
 
-.image3Source {
-    margin-top: 20px;
-    color: rgb(150, 150, 150);
+.image4 {
+    width: 200px;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 30px;
 }
+
+.image5Container {
+    width: 500px;
+    height: 160px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 240px 60px 200px;
+    align-items: center;
+    justify-items: center;
+}
+
+.image51 {
+    height: 160px;
+}
+
+.image52 {
+    height: 160px;
+    padding: 20px;
+}
+
+
 
 .introductionContainer {
     width: 70vw;
@@ -55,4 +79,27 @@
     font-size: 1.2rem;
     text-indent: 4rem;
     text-align: justify;
+}
+
+.chart {
+    width: 70vw;
+    height: 500px;
+    margin: 0px auto;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .image3 {
+        width: 90vw;
+    }
+
+    .introductionContainer {
+        width: 90vw;
+        grid-template-columns: none;
+    }
+
+    .chart {
+        width: 90vw;
+    }
 }
