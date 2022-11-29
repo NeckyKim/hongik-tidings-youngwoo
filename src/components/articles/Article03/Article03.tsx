@@ -42,7 +42,7 @@ export default function Article03() {
             </div>
 
             <div className={styles.reviser}>
-                Revised by Prof. Neil Alexander Cole
+                Revised by Prof. Jeff T. Vandeweerd
             </div>
 
             <div className={articleStyles.paragraph}>
