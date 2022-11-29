@@ -2,12 +2,48 @@ import HeaderBottom from '../../header/HeaderBottom';
 
 import articleStyles from '../ArticleStyle.module.css';
 
+
+
+import styles from './Article03.module.css';
+
 const title: string = "Invisible but Powerful Cloud Computing";
+
+
 
 export default function Article03() {
     return (
         <div>
             <HeaderBottom title={title} />
+
+            <div className={styles.titleContainer1}>
+                <img alt="Article Title" className={styles.image11} src={process.env.PUBLIC_URL + "/articles/3/1-1.png"} />
+
+                <img alt="Article Title" className={styles.image12} src={process.env.PUBLIC_URL + "/articles/3/1-2.png"} />
+
+                <div className={styles.image13} />
+            </div>
+
+            <div className={styles.titleContainer2}>
+                <div className={styles.image21} />
+
+                <img alt="Article Title" className={styles.image22} src={process.env.PUBLIC_URL + "/articles/3/1-4.png"} />
+
+                <div className={styles.image23} />
+            </div>
+
+            <div className={styles.title}>
+                Invisible but<br />
+                Powerful<br />
+                Cloud Computing
+            </div>
+
+            <div className={styles.writer}>
+                Written by Kim Young-Woo
+            </div>
+
+            <div className={styles.reviser}>
+                Revised by Prof. Neil Alexander Cole
+            </div>
 
             <div className={articleStyles.paragraph}>
                 In the 21st century, information technology is growing at a faster pace than ever. We are currently living in an “information society”. Computer technologies not only have a great impact on science, but also on our daily lives. As the times change, the need for technicians and high-performance equipment that can handle this information is also increasing. Large corporations may not have much difficulty meeting these conditions, but for individuals or small start-ups the difficulty is real. Due to tight budgets, it’s very difficult to hire technicians and purchase expensive equipment and most small businesses are unable to do so. In this situation, cloud computing could be a very good solution.
@@ -58,7 +94,7 @@ export default function Article03() {
             </div>
 
             <div className={articleStyles.paragraph}>
-
+                Once you’ve decided on what cloud type meets your need, let’s find out how to use cloud computing. There are two types of clouds, public clouds and private clouds. As its name suggests, a public cloud operates on the Internet for the public. Anyone who needs cloud services can use it and it’s the most common type of cloud computing option. As you can see from the image above, multiple companies are sharing the cloud over the Internet. Another characteristic is that it provides high flexibility, because you can use the cloud resources as much as you want and just pay for them. Also, the customers do not have to directly manage the system itself as the service provider does this instead. In contrast, you can think of a private cloud as a service for an organization or company. The organizations directly own the system resource and run separate clouds exclusively for themselves. People who do not have permission can’t access the cloud server. Private clouds provide a strong level of security and higher-level services compared to public clouds, but it’s very expensive to use this service.
             </div>
 
 

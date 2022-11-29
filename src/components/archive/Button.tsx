@@ -56,7 +56,7 @@ function MonthTranslator(month: number) {
 export default function Button(props: ButtonProps) {
     return (
         <Link to={"/article/" + String(props.id)} className={styles.button}>
-            <img alt="Image" className={styles.buttonImage} src={process.env.PUBLIC_URL + "/articles/" + props.id + ".png"} />
+            <img alt="Image" className={styles.buttonImage} src={process.env.PUBLIC_URL + "/articles/" + props.id + "/title.png"} />
 
             <div className={styles.buttonInfo}>
                 <div className={styles.title}>

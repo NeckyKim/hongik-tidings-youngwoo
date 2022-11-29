@@ -7,7 +7,10 @@ import articleStyles from '../ArticleStyle.module.css';
 import styles from './Article08.module.css';
 
 
+
 const title: string = "The Last of Internet Explorer";
+
+
 
 const data1 = [
     { id: "Chrome", value: 0.6693 },
@@ -85,6 +88,8 @@ const data2 = [
     }
 ]
 
+
+
 function Chart1() {
     return (
         <ResponsiveBar
@@ -132,9 +137,9 @@ export default function Article08() {
             <HeaderBottom title={title} />
 
             <div className={styles.titleContainer}>
-                <img alt="Article Title" className={styles.image1} src={process.env.PUBLIC_URL + "/articles/08/1.png"} />
+                <img alt="Article Title" className={styles.image1} src={process.env.PUBLIC_URL + "/articles/8/1.png"} />
 
-                <img alt="Article Title" className={styles.image2} src={process.env.PUBLIC_URL + "/articles/08/2.png"} />
+                <img alt="Article Title" className={styles.image2} src={process.env.PUBLIC_URL + "/articles/8/2.png"} />
 
                 <div className={styles.writer}>
                     Written by Kim Young-Woo
@@ -149,7 +154,7 @@ export default function Article08() {
 
             <div className={styles.introductionContainer}>
                 <div>
-                    <img alt="Image" className={styles.image3} src={process.env.PUBLIC_URL + "/articles/08/3.jpg"} />
+                    <img alt="Image" className={styles.image3} src={process.env.PUBLIC_URL + "/articles/8/3.jpg"} />
 
                     <div className={articleStyles.source} style={{marginTop: "20px", marginBottom: "20px"}}>
                         (Source) Reuters, www.reuters.com
@@ -198,7 +203,7 @@ export default function Article08() {
                 ActiveX and Security Flaws
             </div>
 
-            <img alt="Image" className={styles.image4} src={process.env.PUBLIC_URL + "/articles/08/4.png"} />
+            <img alt="Image" className={styles.image4} src={process.env.PUBLIC_URL + "/articles/8/4.png"} />
 
             <div className={articleStyles.source}>
                 (Source) Wikipedia, en.wikipedia.org/wiki/ActiveX
@@ -215,13 +220,13 @@ export default function Article08() {
             </div>
 
             <div className={styles.image5Container}>
-                <img alt="Image" className={styles.image51} src={process.env.PUBLIC_URL + "/articles/08/5.png"} />
+                <img alt="Image" className={styles.image51} src={process.env.PUBLIC_URL + "/articles/8/5.png"} />
 
                 <div style={{ fontSize: "2rem" }}>
                     vs.
                 </div>
 
-                <img alt="Image" className={styles.image52} src={process.env.PUBLIC_URL + "/articles/08/6.png"} />
+                <img alt="Image" className={styles.image52} src={process.env.PUBLIC_URL + "/articles/8/6.png"} />
             </div>
 
             <div className={articleStyles.source}>

@@ -90,7 +90,7 @@
 @media screen and (max-width: 1000px) {
     .titleContainer {
         width: 100vw;
-        height: 60vw;
+        height: 50vw;
     }
 
     .introductionContainer {
@@ -103,15 +103,15 @@
     }
 
     .image1 {
-        width: 70vw;
-        top: calc(140px + 5vw);
-        left: 15vw;
+        width: 60vw;
+        top: calc(140px + 3vw);
+        left: 20vw;
     }
 
     .image2 {
-        width: 50vw;
-        top: calc(140px + 40vw);
-        left: 40vw;
+        width: 40vw;
+        top: calc(140px + 35vw);
+        left: 45vw;
     }
 
     .image3 {
@@ -133,14 +133,14 @@
 
     .writer {
         font-size: 2vw;
-        top: calc(140px + 45vw);
-        left: calc(40vw + 30px);
+        top: calc(140px + 39vw);
+        left: calc(45vw + 30px);
     }
     
     .reviser {
         font-size: 2vw;
-        top: calc(140px + 49vw);
-        left: calc(40vw + 30px);
+        top: calc(140px + 42vw);
+        left: calc(45vw + 30px);
     }
 
     .chart {

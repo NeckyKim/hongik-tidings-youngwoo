@@ -1,0 +1,184 @@
+.titleContainer1 {
+    width: 100vw;
+    height: 500px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 15vw 590px calc(85vw - 590px);
+}
+
+.image11 {
+    width: 15vw;
+    height: 500px;
+}
+
+.image12 {
+    width: 590px;
+    height: 500px;
+}
+
+.image13 {
+    width: calc(85vw - 590px);
+    height: 500px;
+    background-color: rgb(0, 6, 82);
+}
+
+.titleContainer2 {
+    display: none;
+}
+
+.image21 {
+    display: none;
+}
+
+.image22 {
+    display: none;
+}
+
+.image23 {
+    display: none;
+}
+
+.title {
+    font-size: 4rem;
+    font-family: 'JetBrains Mono';
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 330px;
+    right: 15vw;
+    text-align: right;
+}
+
+.writer {
+    color: rgb(19, 218, 254);
+    position: absolute;
+    top: 545px;
+    right: 15vw;
+}
+
+.reviser {
+    color: rgb(19, 218, 254);
+    position: absolute;
+    top: 570px;
+    right: 15vw;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .titleContainer1 {
+        height: 300px;
+        grid-template-columns: 15vw 354px calc(85vw - 354px);
+        margin-bottom: 0px;
+    }
+    
+    .image11 {
+        width: 15vw;
+        height: 300px;
+    }
+    
+    .image12 {
+        width: 354px;
+        height: 300px;
+    }
+    
+    .image13 {
+        width: calc(85vw - 354px);
+        height: 300px;
+    }
+
+    .titleContainer2 {
+        width: 100vw;
+        height: 200px;
+        display: grid;
+        grid-template-columns: 15vw 295px calc(85vw - 295px);
+        margin-bottom: 50px;
+    }
+    
+    .image21 {
+        display: block;
+        background-color: rgb(0, 15, 102);
+    }
+    
+    .image22 {
+        display: block;
+        width: 295px;
+        height: 200px;
+    }
+    
+    .image23 {
+        display: block;
+        background-color: rgb(0, 6, 82);
+    }
+
+    .title {
+        font-size: 3rem;
+        line-height: 50px;
+        top: 360px;
+        right: 15vw;
+        text-align: right;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .titleContainer1 {
+        height: 40vw;
+        grid-template-columns: 0fr 40vw 60vw;
+        margin-bottom: 0px;
+    }
+    
+    .image11 {
+        display: none;
+    }
+    
+    .image12 {
+        width: 47.2vw;
+        height: 40vw;
+    }
+    
+    .image13 {
+        width: 60vw;
+        height: 40vw;
+    }
+
+    .titleContainer2 {
+        height: 10vw;
+        grid-template-columns: 0fr 40vw 60vw;
+    }
+    
+    .image21 {
+        display: none;
+    }
+    
+    .image22 {
+        width: 40vw;
+        height: 10vw;
+    }
+    
+    .image23 {
+        display: block;
+        width: 60vw;
+        height: 10vw;
+    }
+
+    .title {
+        font-size: 5vw;
+        line-height: 5vw;
+        top: calc(140px + 20vw);
+        right: 5vw;
+    }
+
+    .writer {
+        font-size: min(1rem, 3vw);
+        top: calc(140px + 40vw);
+        right: 5vw;
+    }
+    
+    .reviser {
+        font-size: min(1rem, 3vw);
+        top: calc(140px + 40vw + min(4vw, 30px));
+        right: 5vw;
+    }
+}
