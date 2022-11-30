@@ -10,6 +10,7 @@
 .paragraph {
     width: 70vw;
     font-size: 1.2rem;
+    line-height: 1.8rem;
     margin: 0px auto;
     margin-top: 40px;
     text-indent: 4rem;
@@ -60,6 +61,7 @@
 
     .paragraph {
         font-size: 1rem;
+        line-height: 1.5rem;
     }
 
     .conclusion {

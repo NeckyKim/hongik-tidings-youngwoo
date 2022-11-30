@@ -1,12 +1,53 @@
 import HeaderBottom from '../../header/HeaderBottom';
 
+import { ResponsivePie } from '@nivo/pie';
+
 import articleStyles from '../ArticleStyle.module.css';
-
-
-
 import styles from './Article03.module.css';
 
+
+
 const title: string = "Invisible but Powerful Cloud Computing";
+
+
+
+const data1 = [
+    { id: "Amazon Web Services", value: 0.32 },
+    { id: "Microsoft Azure", value: 0.19 },
+    { id: "Google Cloud Platform", value: 0.07 },
+    { id: "Others", value: 0.42 }
+]
+
+function Chart() {
+    return (
+        <ResponsivePie
+            data={data1}
+            margin={{ top: 50, right: 20, bottom: 50, left: 50 }}
+            innerRadius={0.5}
+            padAngle={1}
+            colors={["rgb(255, 153, 0)", "rgb(0, 137, 214)", "rgb(219, 69, 56)", "rgb(200, 200, 200)"]}
+            cornerRadius={3}
+            fit={false}
+            activeOuterRadiusOffset={20}
+            arcLinkLabelsTextColor="#333333"
+            arcLinkLabelsThickness={2}
+            arcLinkLabelsStraightLength={36}
+            arcLinkLabelsColor={{ from: 'color' }}
+            motionConfig={{
+                mass: 1,
+                tension: 500,
+                friction: 57,
+                clamp: true,
+                velocity: 0
+            }}
+            valueFormat=" >-.0%"
+            theme={{
+                fontSize: 20,
+                fontFamily: "Pretendard"
+            }}
+        />
+    )
+}
 
 
 
@@ -16,9 +57,9 @@ export default function Article03() {
             <HeaderBottom title={title} />
 
             <div className={styles.titleContainer1}>
-                <img alt="Article Title" className={styles.image11} src={process.env.PUBLIC_URL + "/articles/3/1-1.png"} />
+                <img className={styles.image11} src={process.env.PUBLIC_URL + "/articles/3/1-1.png"} />
 
-                <img alt="Article Title" className={styles.image12} src={process.env.PUBLIC_URL + "/articles/3/1-2.png"} />
+                <img className={styles.image12} src={process.env.PUBLIC_URL + "/articles/3/1-2.png"} />
 
                 <div className={styles.image13} />
             </div>
@@ -26,7 +67,7 @@ export default function Article03() {
             <div className={styles.titleContainer2}>
                 <div className={styles.image21} />
 
-                <img alt="Article Title" className={styles.image22} src={process.env.PUBLIC_URL + "/articles/3/1-4.png"} />
+                <img className={styles.image22} src={process.env.PUBLIC_URL + "/articles/3/1-4.png"} />
 
                 <div className={styles.image23} />
             </div>
@@ -48,6 +89,17 @@ export default function Article03() {
             <div className={articleStyles.paragraph}>
                 In the 21st century, information technology is growing at a faster pace than ever. We are currently living in an “information society”. Computer technologies not only have a great impact on science, but also on our daily lives. As the times change, the need for technicians and high-performance equipment that can handle this information is also increasing. Large corporations may not have much difficulty meeting these conditions, but for individuals or small start-ups the difficulty is real. Due to tight budgets, it’s very difficult to hire technicians and purchase expensive equipment and most small businesses are unable to do so. In this situation, cloud computing could be a very good solution.
             </div>
+
+            <div className={styles.chart}>
+                <Chart />
+            </div>
+
+            <div className={articleStyles.source}>
+                (Source) Canalys Estimates, April 2021
+            </div>
+
+            <img className={styles.image3} src={process.env.PUBLIC_URL + "/articles/3/2-1.png"} />
+            <img className={styles.image4} src={process.env.PUBLIC_URL + "/articles/3/2-2.png"} />
 
             <div className={articleStyles.paragraph}>
                 Cloud computing technology is a very important item and a core technology for IT industries. Amazon.com started as an Internet shopping mall. They had built many servers to prepare for large events such as Black Friday sales. In 2006, they started a storage service with the idea that servers remain unused after big events. Later they launched Amazon Web Services(AWS) and expanded service categories to machine learning, security, IoT(Internet of Things), networks, databases, and more, becoming number one in the global market. Microsoft, which dominated computer operating systems and the office software market with Windows and Office, also launched their cloud service, Microsoft Azure. Currently, Microsoft Azure’s sales have already surpassed Window’s sales, making it their flagship business. Google, the biggest search engine company in the world, introduced Google Cloud Platform, and has become a new business that leads Google’s sales. In Korea, Naver launched Naver Cloud Platform in 2017, and Korea’s corporations are using their service. Naver is establishing data centers not only in Korea, but in the United States, Japan, Singapore, and Europe. Not only those companies but, IBM and Oracle are also making huge sales in cloud computing.

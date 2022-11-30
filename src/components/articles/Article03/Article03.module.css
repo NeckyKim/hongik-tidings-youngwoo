@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
 
+
+
 .titleContainer1 {
     width: 100vw;
     height: 500px;
@@ -41,147 +43,133 @@
 }
 
 .title {
-    font-size: 4rem;
+    font-size: 3.5vw;
     font-family: 'JetBrains Mono';
-    font-weight: 600;
-    line-height: 60px;
+    font-weight: 1000;
+    line-height: 3.5vw;
+    text-shadow: 0px 5px 5px rgb(0, 6, 82);
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 330px;
+    bottom: 450px;
     right: 15vw;
     text-align: right;
 }
 
 .writer {
+    font-size: 1.2rem;
     color: rgb(19, 218, 254);
     position: absolute;
-    top: 545px;
+    top: 530px;
     right: 15vw;
 }
 
 .reviser {
+    font-size: 1.2rem;
     color: rgb(19, 218, 254);
     position: absolute;
-    top: 570px;
+    top: 560px;
     right: 15vw;
 }
 
+.chart {
+    width: 70vw;
+    height: 600px;
+    margin: 0px auto;
+}
 
+.table1 {
+    width: 70vw;
+    height: 200px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
-@media screen and (max-width: 1400px) {
-    .titleContainer1 {
-        height: 300px;
-        grid-template-columns: 15vw 354px calc(85vw - 354px);
-        margin-bottom: 0px;
-    }
-    
-    .image11 {
-        width: 15vw;
-        height: 300px;
-    }
-    
-    .image12 {
-        width: 354px;
-        height: 300px;
-    }
-    
-    .image13 {
-        width: calc(85vw - 354px);
-        height: 300px;
-    }
+.image3 {
+    width: 70vw;
+    display: block;
+    margin: 0px auto;
+}
 
-    .titleContainer2 {
-        width: 100vw;
-        height: 200px;
-        display: grid;
-        grid-template-columns: 15vw 295px calc(85vw - 295px);
-        margin-bottom: 50px;
-    }
-    
-    .image21 {
-        display: block;
-        background-color: rgb(0, 15, 102);
-    }
-    
-    .image22 {
-        display: block;
-        width: 295px;
-        height: 200px;
-    }
-    
-    .image23 {
-        display: block;
-        background-color: rgb(0, 6, 82);
-    }
-
-    .title {
-        font-size: 3rem;
-        line-height: 50px;
-        top: 360px;
-        right: 15vw;
-        text-align: right;
-    }
+.image4 {
+    width: 35vw;
+    display: block;
+    margin: 0px auto;
 }
 
 
 
 @media screen and (max-width: 1000px) {
     .titleContainer1 {
-        height: 40vw;
-        grid-template-columns: 0fr 47.2vw calc(100vw - 47.2vw);
+        height: 30vw;
+        grid-template-columns: calc(50vw - 17.7vw) 35.4vw calc(50vw - 17.7vw);
         margin-bottom: 0px;
     }
     
     .image11 {
-        display: none;
+        width: calc(50vw - 17.7vw);
+        height: 30vw;
     }
     
     .image12 {
-        width: 47.2vw;
-        height: 40vw;
+        width: 35.4vw;
+        height: 30vw;
     }
     
     .image13 {
-        width: calc(100vw - 47.2vw);
-        height: 40vw;
+        width: calc(50vw - 17.7vw);
+        height: 30vw;
     }
 
     .titleContainer2 {
-        height: 10vw;
-        grid-template-columns: 0fr 40vw 60vw;
+        width: 100vw;
+        height: 30vw;
+        display: grid;
+        grid-template-columns: calc(50vw - 17.7vw) 35.4vw calc(50vw - 17.7vw);
     }
     
     .image21 {
-        display: none;
+        display: block;
+        width: calc(50vw - 17.7vw);
+        height: 30vw;
+        background-color: rgb(0, 15, 102);
     }
     
     .image22 {
-        width: 40vw;
-        height: 10vw;
+        display: block;
+        width: 35.4vw;
+        height: 30vw;
     }
     
     .image23 {
         display: block;
-        width: 60vw;
-        height: 10vw;
+        width: calc(50vw - 17.7vw);
+        height: 30vw;
+        background-color: rgb(0, 6, 82);
     }
 
     .title {
-        font-size: 5vw;
-        line-height: 5vw;
-        top: calc(140px + 20vw);
-        right: 5vw;
+        width: 100vw;
+        font-size: 6vw;
+        line-height: 6vw;
+        top: calc(140px + 32vw);
+        right: 0vw;
+        text-align: center;
     }
 
     .writer {
-        font-size: min(1rem, 3vw);
-        top: calc(140px + 38vw);
-        right: 5vw;
+        width: 100vw;
+        font-size: 2vw;
+        top: calc(140px + 52vw);
+        right: 0;
+        text-align: center;
     }
     
     .reviser {
-        font-size: min(1rem, 3vw);
-        top: calc(140px + 38vw + min(4vw, 30px));
-        right: 5vw;
+        width: 100vw;
+        font-size: 2vw;
+        top: calc(140px + 55vw);
+        right: 0;
+        text-align: center;
     }
 }

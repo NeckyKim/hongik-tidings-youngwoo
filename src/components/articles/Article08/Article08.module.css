@@ -15,6 +15,7 @@
 .introductionParagraph {
     width: 100%;
     font-size: 1.2rem;
+    line-height: 1.8rem;
     text-indent: 4rem;
     text-align: justify;
 }
@@ -90,7 +91,7 @@
 @media screen and (max-width: 1000px) {
     .titleContainer {
         width: 100vw;
-        height: 50vw;
+        height: 60vw;
     }
 
     .introductionContainer {
@@ -103,15 +104,29 @@
     }
 
     .image1 {
-        width: 60vw;
-        top: calc(140px + 3vw);
-        left: 20vw;
+        width: 70vw;
+        top: calc(140px + 5vw);
+        left: 15vw;
     }
 
     .image2 {
-        width: 40vw;
-        top: calc(140px + 35vw);
+        width: 50vw;
+        top: calc(140px + 40vw);
         left: 45vw;
+    }
+
+    .writer {
+        width: 50vw;
+        font-size: 1.8vw;
+        top: calc(140px + 45vw);
+        left: 48vw;
+    }
+    
+    .reviser {
+        width: 50vw;
+        font-size: 1.8vw;
+        top: calc(140px + 49vw);
+        left: 48vw;
     }
 
     .image3 {
@@ -131,18 +146,6 @@
         height: min(160px, 30vw);
     }
 
-    .writer {
-        font-size: 2vw;
-        top: calc(140px + 39vw);
-        left: calc(45vw + 30px);
-    }
-    
-    .reviser {
-        font-size: 2vw;
-        top: calc(140px + 42vw);
-        left: calc(45vw + 30px);
-    }
-
     .chart {
         width: 90vw;
     }
@@ -153,5 +156,6 @@
 @media screen and (max-width: 500px) {
     .introductionParagraph {
         font-size: 1rem;
+        line-height: 1.5rem;
     }
 }
