@@ -14,7 +14,7 @@ export default function Archive() {
             {/* <Button id={articles[3].id} section={articles[3].section} title={articles[3].title} year={articles[3].year} month={articles[3].month} /> */}
             {/* <Button id={articles[4].id} section={articles[4].section} title={articles[4].title} year={articles[4].year} month={articles[4].month} /> */}
             {/* <Button id={articles[5].id} section={articles[5].section} title={articles[5].title} year={articles[5].year} month={articles[5].month} /> */}
-            {/* <Button id={articles[6].id} section={articles[6].section} title={articles[6].title} year={articles[6].year} month={articles[6].month} /> */}
+            <Button id={articles[6].id} section={articles[6].section} title={articles[6].title} year={articles[6].year} month={articles[6].month} />
             <Button id={articles[7].id} section={articles[7].section} title={articles[7].title} year={articles[7].year} month={articles[7].month} />
             {/* <Button id={articles[8].id} section={articles[8].section} title={articles[8].title} year={articles[8].year} month={articles[8].month} /> */}
             {/* <Button id={articles[9].id} section={articles[9].section} title={articles[9].title} year={articles[9].year} month={articles[9].month} /> */}
