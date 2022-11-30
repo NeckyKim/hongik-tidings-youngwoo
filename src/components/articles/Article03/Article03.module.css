@@ -97,6 +97,167 @@
     margin: 0px auto;
 }
 
+.table {
+    width: 70vw;
+    margin: 0px auto;
+    margin-top: 50px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.tableLegends {
+    width: fit-content;
+    margin: 0px auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tableLegendsElements {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+}
+
+.tableLegendsText {
+    height: 20px;
+    line-height: 20px;
+    padding-left: 10px;
+}
+
+.tableLegendsBlue {
+    background-color: rgb(180, 199, 231);
+    border-radius: 5px;
+}
+
+.tableLegendsNavy {
+    background-color: rgb(0, 112, 192);
+    border-radius: 5px;
+}
+
+.tableLegendsYellow {
+    background-color: rgb(255, 230, 153);
+    border-radius: 5px;
+}
+
+.tableLegendsOrange {
+    background-color: rgb(237, 125, 49);
+    border-radius: 5px;
+}
+
+.tableHeader {
+    font-size: 1.2rem;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tableBlue {
+    font-size: 1.2rem;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(180, 199, 231);
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.tableNavy {
+    font-size: 1.2rem;
+    height: 40px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 112, 192);
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.tableYellow {
+    font-size: 1.2rem;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(255, 230, 153);
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.tableOrange {
+    font-size: 1.2rem;
+    height: 40px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(237, 125, 49);
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.tableBlue:hover,
+.tableNavy:hover,
+.tableYellow:hover,
+.tableOrange:hover {
+    transform: scale(1.2);
+}
+
+.image5Container {
+    width: 60vw;
+    height: fit-content;
+    margin: 0px auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.image5Elements {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.image5Header {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.image5 {
+    width: 100%;
+}
+
+.image5:hover {
+    transform: scale(1.2);
+}
+
+.conclusionTitle {
+    width: 70vw;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin: 0px auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.conclusionParagraph {
+    width: 70vw;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin: 0px auto;
+    margin-top: 40px;
+    text-indent: 4rem;
+    text-align: justify;
+}
+
+.image6 {
+    width: 800px;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
 
 
 @media screen and (max-width: 1000px) {
@@ -105,17 +266,17 @@
         grid-template-columns: calc(50vw - 17.7vw) 35.4vw calc(50vw - 17.7vw);
         margin-bottom: 0px;
     }
-    
+
     .image11 {
         width: calc(50vw - 17.7vw);
         height: 30vw;
     }
-    
+
     .image12 {
         width: 35.4vw;
         height: 30vw;
     }
-    
+
     .image13 {
         width: calc(50vw - 17.7vw);
         height: 30vw;
@@ -127,20 +288,20 @@
         display: grid;
         grid-template-columns: calc(50vw - 17.7vw) 35.4vw calc(50vw - 17.7vw);
     }
-    
+
     .image21 {
         display: block;
         width: calc(50vw - 17.7vw);
         height: 30vw;
         background-color: rgb(0, 15, 102);
     }
-    
+
     .image22 {
         display: block;
         width: 35.4vw;
         height: 30vw;
     }
-    
+
     .image23 {
         display: block;
         width: calc(50vw - 17.7vw);
@@ -164,12 +325,123 @@
         right: 0;
         text-align: center;
     }
-    
+
     .reviser {
         width: 100vw;
         font-size: 2vw;
         top: calc(140px + 55vw);
         right: 0;
         text-align: center;
+    }
+
+    .chart {
+        width: 100vw;
+        height: 50vw;
+        margin: 0px auto;
+    }
+
+    .image3 {
+        width: 90vw;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .image4 {
+        width: 45vw;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .table {
+        width: 90vw;
+        gap: 3vw;
+    }
+
+    .tableLegends {
+        width: fit-content;
+        margin: 0px auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+    }
+
+    .tableHeader {
+        font-size: 2vw;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .tableBlue {
+        font-size: 2vw;
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .tableNavy {
+        font-size: 2vw;
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .tableYellow {
+        font-size: 2vw;
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .tableOrange {
+        font-size: 2vw;
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .image5Container {
+        width: min(800px, 80vw);
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px;
+    }
+
+    .image5Elements {
+        display: grid;
+        grid-template-rows: 50px 1fr;
+    }
+
+    .image5Header {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
+    .conclusionTitle {
+        width: 90vw;
+    }
+
+    .conclusionParagraph {
+        width: 90vw;
+        text-indent: 2rem;
+    }
+
+    .image6 {
+        width: min(800px, 80vw);
+        display: block;
+        margin: 0px auto;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .conclusionParagraph {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 }

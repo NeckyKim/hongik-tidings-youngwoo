@@ -26,7 +26,16 @@ export default function HeaderBottom(props: HeaderBottomProps) {
     return (
         <div>
             <div className={scrollPosition < 10 ? styles.notScrolled : styles.scrolled}>
-                {props.title}
+                <div className={styles.text}>
+                    {props.title}
+                </div>
+
+                <div
+                    className={styles.scrollMeter}
+                    style={{
+                        width: String("calc(100vw * " + (scrollPosition / (document.documentElement.scrollHeight - 1000)) + ")"),
+                    }}
+                />
             </div>
 
             <div className={styles.blank} />

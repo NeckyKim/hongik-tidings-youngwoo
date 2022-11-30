@@ -2,15 +2,17 @@
     height: 70px;
 }
 
+.text {
+    font-size: 1.3rem;
+    line-height: 70px;
+    padding-left: 15vw;
+}
+
 .notScrolled {
     width: 100vw;
     height: 70px;
-    font-size: 1.2rem;
-    line-height: 70px;
     color: rgb(50, 50, 50);
     background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(200, 200, 200);
-    padding-left: 15vw;
     position: fixed;
     top: 70px;
     left: 0;
@@ -20,28 +22,25 @@
 .scrolled {
     width: 100vw;
     height: 70px;
-    font-size: 1.2rem;
-    line-height: 70px;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
-    border-bottom: 1px solid rgb(255, 255, 255);
-    padding-left: 15vw;
     position: fixed;
     top: 0px;
     left: 0;
     z-index: 2;
 }
 
+.scrollMeter {
+    height: 5px;
+    margin-top: -5px;
+    background-color: rgb(150, 150, 150);
+}
+
 
 
 @media screen and (max-width: 1000px) {
-    .notScrolled {
+    .text {
+        font-size: min(1rem, 5vw);
         padding-left: 5vw;
-        font-size: 1rem;
-    }
-
-    .scrolled {
-        padding-left: 5vw;
-        font-size: 1rem;
     }
 }

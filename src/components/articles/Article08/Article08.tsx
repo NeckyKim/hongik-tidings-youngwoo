@@ -103,6 +103,9 @@ function Chart1() {
             colorBy="indexValue"
             borderRadius={5}
             valueFormat=" >-.2%"
+            theme={{
+                fontFamily: "Pretendard"
+            }}
         />
     )
 }
@@ -125,6 +128,9 @@ function Chart2() {
             pointBorderColor={{ from: 'serieColor' }}
             colors={["rgb(251, 189, 5)", "rgb(0, 191, 255)"]}
             useMesh={true}
+            theme={{
+                fontFamily: "Pretendard"
+            }}
         />
     )
 }

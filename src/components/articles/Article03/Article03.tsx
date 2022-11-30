@@ -42,7 +42,7 @@ function Chart() {
             }}
             valueFormat=" >-.0%"
             theme={{
-                fontSize: 20,
+                fontSize: 15,
                 fontFamily: "Pretendard"
             }}
         />
@@ -131,9 +131,115 @@ export default function Article03() {
                 Which Clouds to Use(Cloud Service Models)
             </div>
 
+            <div className={styles.table}>
+                <div className={styles.tableElements1}>
+                    <div className={styles.tableHeader}>IaaS</div>
+                    <div className={styles.tableBlue}>Application</div>
+                    <div className={styles.tableBlue}>Data</div>
+                    <div className={styles.tableBlue}>Runtime</div>
+                    <div className={styles.tableBlue}>Middleware</div>
+                    <div className={styles.tableBlue}>Operating Systems</div>
+                    <div className={styles.tableBlue}>Virtualization</div>
+                    <div className={styles.tableNavy}>Servers</div>
+                    <div className={styles.tableNavy}>Storage</div>
+                    <div className={styles.tableNavy}>Networking</div>
+                </div>
+
+                <div className={styles.tableElements1}>
+                    <div className={styles.tableHeader}>PaaS</div>
+                    <div className={styles.tableBlue}>Application</div>
+                    <div className={styles.tableBlue}>Data</div>
+                    <div className={styles.tableNavy}>Runtime</div>
+                    <div className={styles.tableNavy}>Middleware</div>
+                    <div className={styles.tableNavy}>Operating Systems</div>
+                    <div className={styles.tableNavy}>Virtualization</div>
+                    <div className={styles.tableNavy}>Servers</div>
+                    <div className={styles.tableNavy}>Storage</div>
+                    <div className={styles.tableNavy}>Networking</div>
+                </div>
+
+                <div className={styles.tableElements1}>
+                    <div className={styles.tableHeader}>SaaS</div>
+                    <div className={styles.tableNavy}>Application</div>
+                    <div className={styles.tableNavy}>Data</div>
+                    <div className={styles.tableNavy}>Runtime</div>
+                    <div className={styles.tableNavy}>Middleware</div>
+                    <div className={styles.tableNavy}>Operating Systems</div>
+                    <div className={styles.tableNavy}>Virtualization</div>
+                    <div className={styles.tableNavy}>Servers</div>
+                    <div className={styles.tableNavy}>Storage</div>
+                    <div className={styles.tableNavy}>Networking</div>
+                </div>
+            </div>
+
+            <div className={styles.tableLegends}>
+                <div className={styles.tableLegendsElements}>
+                    <div className={styles.tableLegendsBlue} />
+                    <div className={styles.tableLegendsText}>Things that I have to manage</div>
+                </div>
+
+                <div className={styles.tableLegendsElements}>
+                    <div className={styles.tableLegendsNavy} />
+                    <div className={styles.tableLegendsText}>Things that the cloud service manages</div>
+                </div>
+            </div>
+
+
+
             <div className={articleStyles.paragraph}>
                 There are three types of services in cloud computing, IaaS(Infrastructure as a Service), PaaS(Platform as a Service), SaaS(Software as a Service). As the name indicates, IaaS is a method of only providing the basic infrastructure, which are the physical resources. Only servers, storage, networks, and virtualization services are provided. The rest must be managed by the user. Simply put, it is almost the same as purchasing new computer hardware. Clients only need to pay as much as they use these physical resources. AWS is the most well-known IaaS service provider. SaaS is the service where the cloud service provides software with all the needed functions. In other words, all services are provided if you pay. Dropbox, Google Drive, and Office 365 are good examples of SaaS. PaaS is a little bit ambiguous to define, but it would be easy to think of it as a service between IaaS and SaaS. PaaS is mostly used by program developers. It’s an environment for developing executable computer programs. I know that you might be embarrassed not understanding this terminology, so let me explain with an easy-to-understand example.
             </div>
+
+
+
+            <div className={styles.table}>
+                <div className={styles.tableElements2}>
+                    <div className={styles.tableHeader}>Cook by Yourself</div>
+                    <div className={styles.tableYellow}>Put in the oven</div>
+                    <div className={styles.tableYellow}>Put on toppings</div>
+                    <div className={styles.tableYellow}>Make pizza dough</div>
+                    <div className={styles.tableYellow}>Prepare ingredients</div>
+                    <div className={styles.tableOrange}>Cooking utensils</div>
+                    <div className={styles.tableOrange}>Oven and gas</div>
+                    <div className={styles.tableOrange}>Kitchen</div>
+                </div>
+
+                <div className={styles.tableElements2}>
+                    <div className={styles.tableHeader}>Ready to Cook Package</div>
+                    <div className={styles.tableYellow}>Put in the oven</div>
+                    <div className={styles.tableYellow}>Put on toppings</div>
+                    <div className={styles.tableOrange}>Make pizza dough</div>
+                    <div className={styles.tableOrange}>Prepare ingredients</div>
+                    <div className={styles.tableOrange}>Cooking utensils</div>
+                    <div className={styles.tableOrange}>Oven and gas</div>
+                    <div className={styles.tableOrange}>Kitchen</div>
+                </div>
+
+                <div className={styles.tableElements2}>
+                    <div className={styles.tableHeader}>Pizza Delivery</div>
+                    <div className={styles.tableOrange}>Put in the oven</div>
+                    <div className={styles.tableOrange}>Put on toppings</div>
+                    <div className={styles.tableOrange}>Make pizza dough</div>
+                    <div className={styles.tableOrange}>Prepare ingredients</div>
+                    <div className={styles.tableOrange}>Cooking utensils</div>
+                    <div className={styles.tableOrange}>Oven and gas</div>
+                    <div className={styles.tableOrange}>Kitchen</div>
+                </div>
+            </div>
+
+            <div className={styles.tableLegends}>
+                <div className={styles.tableLegendsElements}>
+                    <div className={styles.tableLegendsYellow} />
+                    <div className={styles.tableLegendsText}>Things that I have to do</div>
+                </div>
+
+                <div className={styles.tableLegendsElements}>
+                    <div className={styles.tableLegendsOrange} />
+                    <div className={styles.tableLegendsText}>Things that other people do for me</div>
+                </div>
+            </div>
+
+
 
             <div className={articleStyles.paragraph}>
                 Let’s say you got hungry and decided to have pizza for dinner. Assume that there are seven steps to make a pizza. IaaS can be seen as cooking pizza for yourself. For your pizza, you need to prepare the ingredients and then cook your pizza in their kitchen. In this situation, the oven and cooking utensils(e.g. spoons, can opener, peeler and more) available in the kitchen play the same role as the physical resources(networks, servers, storages) mentioned for IaaS. PaaS is cooking prepackaged pizza. Inside the package, there is pizza dough, cheese, and tomato sauce for you to combine. The difference between cooking by yourself and a prepackaged pizza is that the ingredients and pizza dough are already prepared. You don’t have to cut vegetables, shred cheese, make pizza dough, and all of the prep work. Putting pizza toppings on the pizza dough can be seen as engineers building their own software on a provided platform. SaaS would be easy to think of as pizza delivery. Like SaaS, the pizza restaurant does everything for you if you pay. Just as cooking prepackaged pizza is in between making pizza for yourself and ordering pizza from delivery, PaaS offers a service between IaaS and SaaS. I hope this helped you understand the differences in the cloud models, and I will continue explaining about cloud computing.
@@ -145,6 +251,25 @@ export default function Article03() {
                 How to Use Cloud(Deployment Models)
             </div>
 
+            <div className={styles.image5Container}>
+                <div className={styles.image5Elements}>
+                    <div className={styles.image5Header}>
+                        Private Cloud
+                    </div>
+
+                    <img className={styles.image5} src={process.env.PUBLIC_URL + "/articles/3/3-1.png"} />
+                </div>
+
+                <div className={styles.image5Elements}>
+                    <div className={styles.image5Header}>
+                        Public Cloud
+                    </div>
+
+                    <img className={styles.image5} src={process.env.PUBLIC_URL + "/articles/3/3-2.png"} />
+                </div>
+            </div>
+            
+
             <div className={articleStyles.paragraph}>
                 Once you’ve decided on what cloud type meets your need, let’s find out how to use cloud computing. There are two types of clouds, public clouds and private clouds. As its name suggests, a public cloud operates on the Internet for the public. Anyone who needs cloud services can use it and it’s the most common type of cloud computing option. As you can see from the image above, multiple companies are sharing the cloud over the Internet. Another characteristic is that it provides high flexibility, because you can use the cloud resources as much as you want and just pay for them. Also, the customers do not have to directly manage the system itself as the service provider does this instead. In contrast, you can think of a private cloud as a service for an organization or company. The organizations directly own the system resource and run separate clouds exclusively for themselves. People who do not have permission can’t access the cloud server. Private clouds provide a strong level of security and higher-level services compared to public clouds, but it’s very expensive to use this service.
             </div>
@@ -155,18 +280,51 @@ export default function Article03() {
                 Cloud Computing Technology for the General Public
             </div>
 
-            <div className={articleStyles.paragraph}>
-                1. Cloud Gaming
+
+
+            <div className={styles.conclusionTitle}>
+                Cloud Gaming
+            </div>
+
+            <img className={styles.image6} src={process.env.PUBLIC_URL + "/articles/3/4-1.png"} />
+
+            <div className={articleStyles.source}>
+                (Source) TechRadar, www.techradar.com
+            </div>
+
+            <div className={styles.conclusionParagraph}>
                 Cloud gaming is a service in which games are operated on cloud servers through streaming services. These games can be played on personal devices such as PCs and smartphones, but not on consoles. The point is that you can enjoy many games by paying a monthly subscription fee without purchasing expensive consoles and game disks. Microsoft, the founder of Xbox, launched Xbox Game Pass. If you pay only 11,800 won per month, you can play almost all their game titles without an Xbox console.
             </div>
 
-            <div className={articleStyles.paragraph}>
-                2. Cloud Storage
+
+
+            <div className={styles.conclusionTitle}>
+                Cloud Storage
+            </div>
+
+            <img className={styles.image6} src={process.env.PUBLIC_URL + "/articles/3/4-2.png"} />
+
+            <div className={articleStyles.source}>
+                (Source) Dropbox, www.dropbox.com
+            </div>
+
+            <div className={styles.conclusionParagraph}>
                 The cloud storage service, which is widely used by students, is also a type of cloud computing service. It’s technology that will store my files or information on the cloud’s server and I can bring them up when I need to. You can upload document files to storage services such as Dropbox and download them from other computers. Also, you can edit or print files without downloading them.
             </div>
 
-            <div className={articleStyles.paragraph}>
-                3. Answer Engine
+
+
+            <div className={styles.conclusionTitle}>
+                Answer Engine
+            </div>
+
+            <img className={styles.image6} src={process.env.PUBLIC_URL + "/articles/3/4-3.png"} />
+
+            <div className={articleStyles.source}>
+                (Source) StackExchange, math.stackexchange.com
+            </div>
+
+            <div className={styles.conclusionParagraph}>
                 Wolfram Alpha, which engineering students may have seen at least once, is also operated by cloud computing technology. You can ask it many things, from simple calculations to complex differential equations. When input is received, Wolfram Alpha performs a computational process in the cloud and provides an answer to the questioner.
             </div>
         </div>
