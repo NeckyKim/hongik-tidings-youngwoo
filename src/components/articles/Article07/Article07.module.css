@@ -2,22 +2,21 @@
     width: 100vw;
     height: 500px;
     margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: calc(50vw - 250px) 500px calc(50vw - 250px);
     background-color: rgb(237, 247, 255);
 }
 
-.image11 {
-    background-color: rgb(237, 247, 255);
-}
-
-.image12 {
+.titleImage {
+    width: 500px;
     height: 500px;
+    position: absolute;
+    top: 140px;
+    left: calc(50vw - 250px);
 }
 
 .title {
     width: 100vw;
-    font-size: 3rem;
+    font-size: 4rem;
+    line-height: 4rem;
     font-family:'Times New Roman', Times, serif;
     font-style: italic;
     text-align: center;
@@ -29,17 +28,17 @@
 .writer {
     width: 100vw;
     position: absolute;
-    text-align: center;
-    top: 280px;
-    left: 0px;
+    text-align: right;
+    top: 550px;
+    right: 15vw;
 }
 
 .reviser {
     width: 100vw;
     position: absolute;
-    text-align: center;
-    top: 305px;
-    left: 0px;
+    text-align: right;
+    top: 580px;
+    right: 15vw;
 }
 
 
