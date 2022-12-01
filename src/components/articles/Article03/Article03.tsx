@@ -1,13 +1,11 @@
 import HeaderBottom from '../../header/HeaderBottom';
+import Banner from '../../banner/Banner';
+import GetArticleInfo from '../../hooks/GetArticleInfo';
 
 import { ResponsivePie } from '@nivo/pie';
 
 import articleStyles from '../ArticleStyle.module.css';
 import styles from './Article03.module.css';
-
-
-
-const title: string = "Invisible but Powerful Cloud Computing";
 
 
 
@@ -52,9 +50,13 @@ function Chart() {
 
 
 export default function Article03() {
+    var articleInfo = GetArticleInfo();
+
+
+
     return (
         <div>
-            <HeaderBottom title={title} />
+            <HeaderBottom title={articleInfo.title} />
 
             <div className={styles.titleContainer1}>
                 <img className={styles.image11} src={process.env.PUBLIC_URL + "/articles/3/1-1.png"} />
@@ -327,6 +329,8 @@ export default function Article03() {
             <div className={styles.conclusionParagraph}>
                 Wolfram Alpha, which engineering students may have seen at least once, is also operated by cloud computing technology. You can ask it many things, from simple calculations to complex differential equations. When input is received, Wolfram Alpha performs a computational process in the cloud and provides an answer to the questioner.
             </div>
+
+            <Banner year={articleInfo.year} month={articleInfo.month} chiefEditor={articleInfo.chiefEditor} keyword={articleInfo.keyword} link={articleInfo.link} />
         </div>
     )
 }

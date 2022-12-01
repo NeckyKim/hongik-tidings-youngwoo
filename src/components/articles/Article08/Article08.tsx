@@ -1,14 +1,12 @@
 import HeaderBottom from '../../header/HeaderBottom';
+import Banner from '../../banner/Banner';
+import GetArticleInfo from '../../hooks/GetArticleInfo';
 
 import { ResponsiveBar } from '@nivo/bar';
 import { ResponsiveLine } from '@nivo/line';
 
 import articleStyles from '../ArticleStyle.module.css';
 import styles from './Article08.module.css';
-
-
-
-const title: string = "The Last of Internet Explorer";
 
 
 
@@ -138,14 +136,18 @@ function Chart2() {
 
 
 export default function Article08() {
+    var articleInfo = GetArticleInfo();
+
+
+
     return (
         <div>
-            <HeaderBottom title={title} />
+            <HeaderBottom title={articleInfo.title} />
 
             <div className={styles.titleContainer}>
-                <img alt="Article Title" className={styles.image1} src={process.env.PUBLIC_URL + "/articles/8/1.png"} />
+                <img className={styles.image1} src={process.env.PUBLIC_URL + "/articles/8/1.png"} />
 
-                <img alt="Article Title" className={styles.image2} src={process.env.PUBLIC_URL + "/articles/8/2.png"} />
+                <img className={styles.image2} src={process.env.PUBLIC_URL + "/articles/8/2.png"} />
 
                 <div className={styles.writer}>
                     Written by Kim Young-Woo
@@ -160,9 +162,9 @@ export default function Article08() {
 
             <div className={styles.introductionContainer}>
                 <div>
-                    <img alt="Image" className={styles.image3} src={process.env.PUBLIC_URL + "/articles/8/3.jpg"} />
+                    <img className={styles.image3} src={process.env.PUBLIC_URL + "/articles/8/3.jpg"} />
 
-                    <div className={articleStyles.source} style={{marginTop: "20px", marginBottom: "20px"}}>
+                    <div className={articleStyles.source} style={{ marginTop: "20px", marginBottom: "20px" }}>
                         (Source) Reuters, www.reuters.com
                     </div>
                 </div>
@@ -209,7 +211,7 @@ export default function Article08() {
                 ActiveX and Security Flaws
             </div>
 
-            <img alt="Image" className={styles.image4} src={process.env.PUBLIC_URL + "/articles/8/4.png"} />
+            <img className={styles.image4} src={process.env.PUBLIC_URL + "/articles/8/4.png"} />
 
             <div className={articleStyles.source}>
                 (Source) Wikipedia, en.wikipedia.org/wiki/ActiveX
@@ -226,13 +228,13 @@ export default function Article08() {
             </div>
 
             <div className={styles.image5Container}>
-                <img alt="Image" className={styles.image51} src={process.env.PUBLIC_URL + "/articles/8/5.png"} />
+                <img className={styles.image51} src={process.env.PUBLIC_URL + "/articles/8/5.png"} />
 
                 <div style={{ fontSize: "2rem" }}>
                     vs.
                 </div>
 
-                <img alt="Image" className={styles.image52} src={process.env.PUBLIC_URL + "/articles/8/6.png"} />
+                <img className={styles.image52} src={process.env.PUBLIC_URL + "/articles/8/6.png"} />
             </div>
 
             <div className={articleStyles.source}>
@@ -258,6 +260,8 @@ export default function Article08() {
             <div className={articleStyles.conclusion}>
                 The second browser war, which was expected to be a battle between Firefox and Internet Explorer, unexpectedly ended in a huge victory for Google Chrome. As a result, Internet Explorer, which won the first browser war, was defeated in the second war with Chrome and has disappeared into history.
             </div>
+
+            <Banner year={articleInfo.year} month={articleInfo.month} chiefEditor={articleInfo.chiefEditor} keyword={articleInfo.keyword} link={articleInfo.link} />
         </div>
     )
 }

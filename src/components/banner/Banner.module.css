@@ -1,0 +1,131 @@
+.bannerContainer {
+    width: 600px;
+    margin-left: calc(85vw - 600px);
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgb(240, 240, 240);
+}
+
+.bannerTop {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: rgb(150, 150, 150);
+}
+
+.bannerBottom {
+    display: grid;
+    grid-template-columns: 1fr 230px;
+}
+
+.bannerBottomLeft {
+    display: grid;
+    grid-template-rows: 1fr 20px 40px 70px;
+}
+
+.yearMonth {
+    height: 20px;
+    font-size: 1rem;
+}
+
+.keyword {
+    height: 40px;
+    font-size: 2.5rem;
+}
+
+.eBookButton {
+    width: 180px;
+    height: 50px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.eBookButton:hover {
+    background-color: rgb(0, 100, 250);
+    cursor: pointer;
+}
+
+.bannerBottomRight {
+    display: grid;
+    grid-template-columns: 100px 120px;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.tidings {
+    width: 100px;
+}
+
+.cover {
+    width: 120px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .bannerContainer {
+        width: 90vw;
+        margin-left: 5vw;
+        padding: 5vw;
+    }
+
+    .bannerBottom {
+        display: grid;
+        grid-template-columns: 1fr 210px;
+    }
+
+    .bannerBottomRight {
+        display: grid;
+        grid-template-columns: 80px 120px;
+        gap: 10px;
+        align-items: flex-end;
+    }
+    
+    .tidings {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bannerContainer {
+        width: 90vw;
+        margin-left: 5vw;
+        padding: 5vw;
+    }
+
+    .bannerTop {
+        font-size: 1rem;
+    }
+
+    .bannerBottom {
+        display: block;
+    }
+
+    .eBookButton {
+        width: 100%;
+    }
+
+    .bannerBottomRight {
+        width: 80vw;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 40px 1fr;
+        gap: 10px;
+        justify-items: center;
+        margin-bottom: 20px;
+    }
+
+    .tidings {
+        width: auto;
+        height: 40px;
+    }
+
+    .cover {
+        width: 30vw;
+    }
+}

@@ -35,21 +35,29 @@
     height: 30px;
     line-height: 20px;
     font-size: 1rem;
+    border-radius: 3px;
     background-color: rgb(200, 200, 200);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
     margin-top: 10px;
     margin-bottom: 5px;
-    padding: 5px;
 }
 
 .badgeContainer {
     width: fit-content;
     height: 30px;
-    padding: 5px;
+    border-radius: 3px;
     background-color: rgb(100, 100, 100);
     display: grid;
     grid-template-columns: 20px 1fr;
-    margin-bottom: 10px;
     gap: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 10px;
 }
 
 .badgeIcon {

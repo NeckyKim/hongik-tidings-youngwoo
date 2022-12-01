@@ -27,6 +27,7 @@
 
 .writer {
     width: 100vw;
+    font-size: 1rem;
     position: absolute;
     text-align: right;
     top: 550px;
@@ -35,12 +36,51 @@
 
 .reviser {
     width: 100vw;
+    font-size: 1rem;
     position: absolute;
     text-align: right;
     top: 580px;
     right: 15vw;
 }
 
+.quote1 {
+    width: 50px;
+    margin-left: 20vw;
+    margin-bottom: 20px;
+}
+
+.quote2 {
+    width: 50px;
+    margin-left: calc(80vw - 50px);
+    transform: rotate(180deg);
+}
+
+.intro1 {
+    width: 60vw;
+    margin: 0px auto;
+    font-size: 2rem;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.intro2 {
+    width: 60vw;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-family:'Times New Roman', Times, serif;
+    text-align: right;
+}
+
+.image {
+    width: 600px;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
 
 
 @media screen and (max-width: 1000px) {
@@ -50,23 +90,51 @@
         display: inline-block;
     }
 
-    .image12 {
-        height: 100vw;
+    .titleImage {
+        width: 50vw;
+        height: 50vw;
+        top: 140px;
+        left: 25vw;
     }
 
     .title {
-        font-size: 5vw;
-        top: calc(140px + 15vw);
-        left: 0px;
+        font-size: 6vw;
+        line-height: 6vw;
+        top: calc(140px + 6vw);
     }
 
     .writer {
-        font-size: 2vw;
-        top: calc(140px + 25vw);
+        font-size: min(1rem, 1.5vw);
+        top: calc(140px + 41vw);
+        right: 5vw;
     }
     
     .reviser {
-        font-size: 2vw;
-        top: calc(140px + 30vw);
+        font-size: min(1rem, 1.5vw);
+        top: calc(140px + 44vw);
+        right: 5vw;
+    }
+
+    .quote1 {
+        margin-left: 10vw;
+    }
+    
+    .quote2 {
+        width: 50px;
+        margin-left: calc(90vw - 50px);
+    }
+    
+    .intro1 {
+        width: 80vw;
+        font-size: 2rem;
+    }
+    
+    .intro2 {
+        width: 80vw;
+        font-size: 1rem;
+    }
+
+    .image {
+        width: 80vw;
     }
 }

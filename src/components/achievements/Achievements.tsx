@@ -13,7 +13,7 @@ type AchievementContainerProps = {
 function AchievementContainer(props: AchievementContainerProps) {
     return (
         <div className={styles.achievementContainer}>
-            <img alt="Achievement Image" className={styles.achievementImage} src={process.env.PUBLIC_URL + "/achievements/" + props.id + ".png"} />
+            <img className={styles.achievementImage} src={process.env.PUBLIC_URL + "/achievements/" + props.id + ".png"} />
 
             <div className={styles.achievementInfo}>
                 <div className={styles.achievementName}>

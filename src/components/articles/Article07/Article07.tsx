@@ -1,20 +1,22 @@
 import HeaderBottom from '../../header/HeaderBottom';
-
-import { ResponsivePie } from '@nivo/pie';
+import Banner from '../../banner/Banner';
+import GetArticleInfo from '../../hooks/GetArticleInfo';
 
 import articleStyles from '../ArticleStyle.module.css';
 import styles from './Article07.module.css';
 
 
 
-const title: string = "Figure Skating Doping Scandal at the Olympics";
-
 
 
 export default function Article07() {
+    var articleInfo = GetArticleInfo();
+
+    
+
     return (
         <div>
-            <HeaderBottom title={title} />
+            <HeaderBottom title={articleInfo.title} />
 
             <div className={styles.titleContainer} />
 
@@ -33,8 +35,26 @@ export default function Article07() {
                 Revised by Prof. Jeff T. Vandeweerd
             </div>
 
+            <img className={styles.quote1} src={process.env.PUBLIC_URL + "/articles/7/quote.png"} />
+
+            <div className={styles.intro1}>
+                “The most important thing in the Olympic games is not winning but taking part.”
+            </div>
+
+            <div className={styles.intro2}>
+                - Pierre de Coubertin, founder of the Olympics -
+            </div>
+
+            <img className={styles.quote2} src={process.env.PUBLIC_URL + "/articles/7/quote.png"} />
+
             <div className={articleStyles.paragraph}>
                 The Olympic Games are a big sporting event that takes place every four years. It is a dream for all athletes to compete in these competitions. Of course, the competition is very fierce and you can see athletes experience the joy of victory, but fair competition and beautiful sportsmanship can also be found. However, would you believe that unfair competition with drugs took place at the Olympic Games?
+            </div>
+
+            <img className={styles.image} src={process.env.PUBLIC_URL + "/articles/7/2.png"} />
+
+            <div className={articleStyles.source}>
+                (Source) dezeen, www.dezeen.com
             </div>
 
             <div className={articleStyles.paragraph}>
@@ -47,6 +67,12 @@ export default function Article07() {
 
             <div className={articleStyles.paragraph}>
                 Before the start of the 2016 Olympic Games in Rio, a doping scandal involving the entire Russian national team was revealed to the world. This was not just a player’s individual deviation, but an incident that included the Russian athletes, RUSADA (Russian Anti-Doping Agency), and the Russian government working together intentionally to cheat and cover it up. Coaches encouraged young athletes to take banned drugs. They achieved noticeable results but destroyed the health of young athletes and ruined their reputations. Due to this scandal, Russian players were not allowed to participate in future Olympics as part of a Russian national team. The only way they could compete was using the name of OAR (Olympic Athletes from Russia) or ROC (Russian Olympic Committee). However, six years later, a nation-wide doping incident that should have never happened again occurred at the 2022 Winter Olympic Games.
+            </div>
+
+            <img className={styles.image} src={process.env.PUBLIC_URL + "/articles/7/3.png"} />
+
+            <div className={articleStyles.source}>
+                (Source) The Hill, www.thehill.com
             </div>
 
             <div className={articleStyles.paragraph}>
@@ -64,6 +90,8 @@ export default function Article07() {
             <div className={articleStyles.conclusion}>
                 We need to think whether a disputed competition is really meaningful. What will the athletes think of trying their best without a guarantee of fair play and sportsmanship? The Olympics games without the Olympic spirit should no longer exist.
             </div>
+
+            <Banner year={articleInfo.year} month={articleInfo.month} chiefEditor={articleInfo.chiefEditor} keyword={articleInfo.keyword} link={articleInfo.link} />
         </div>
     )
 }

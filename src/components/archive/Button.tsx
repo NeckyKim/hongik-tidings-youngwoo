@@ -22,7 +22,7 @@ type BadgeProps = {
 function Badge(props: BadgeProps) {
     return (
         <div className={styles.badgeContainer}>
-            <img alt="Badge" className={styles.badgeIcon} src={process.env.PUBLIC_URL + "/sections/" + props.section + ".png"} />
+            <img className={styles.badgeIcon} src={process.env.PUBLIC_URL + "/sections/" + props.section + ".png"} />
 
             <div className={styles.badgeText}>
                 {props.section}
@@ -56,7 +56,7 @@ function MonthTranslator(month: number) {
 export default function Button(props: ButtonProps) {
     return (
         <Link to={"/article/" + String(props.id)} className={styles.button}>
-            <img alt="Image" className={styles.buttonImage} src={process.env.PUBLIC_URL + "/articles/" + props.id + "/title.png"} />
+            <img className={styles.buttonImage} src={process.env.PUBLIC_URL + "/articles/" + props.id + "/title.png"} />
 
             <div className={styles.buttonInfo}>
                 <div className={styles.title}>
