@@ -18,7 +18,7 @@ export interface articleType {
 
 
 export default function GetArticleInfo() {
-    const [articleInfo, setArticleInfo] = useState<articleType>(articlesDatabase[Number(location.pathname.replace("/article/", "")) - 1]);
+    const [articleInfo, setArticleInfo] = useState<articleType>(articlesDatabase[Number(location.pathname.replace("/articles/", "").replace("/", "")) - 1]);
 
     return articleInfo;
 }

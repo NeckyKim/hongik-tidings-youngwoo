@@ -10,6 +10,8 @@ import Footer from './components/footer/Footer';
 import NotFound from './components/notFound/NotFound';
 
 import Article03 from './components/articles/Article03/Article03';
+import Article05 from './components/articles/Article05/Article05';
+import Article06 from './components/articles/Article06/Article06';
 import Article07 from './components/articles/Article07/Article07';
 import Article08 from './components/articles/Article08/Article08';
 
@@ -29,10 +31,13 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/articles" element={<Articles />} />
                     <Route path="/achievements" element={<Achievements />} />
-                    {/* <Route path="/aboutme" element={<AboutMe />} /> */}
-                    <Route path="/article/3" element={<Article03 />} />
-                    <Route path="/article/7" element={<Article07 />} />
-                    <Route path="/article/8" element={<Article08 />} />
+                    <Route path="/aboutme" element={<AboutMe />} />
+
+                    <Route path="/articles/3" element={<Article03 />} />
+                    <Route path="/articles/5" element={<Article05 />} />
+                    <Route path="/articles/6" element={<Article06 />} />
+                    <Route path="/articles/7" element={<Article07 />} />
+                    <Route path="/articles/8" element={<Article08 />} />
 
                     <Route path="*" element={<NotFound />} />
                 </Routes>

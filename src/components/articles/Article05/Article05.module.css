@@ -1,0 +1,118 @@
+.titleContainer {
+    width: 100vw;
+    height: 500px;
+    margin-bottom: 50px;
+    background-color: rgb(220, 220, 220);
+}
+
+.titleImage1 {
+    height: 500px;
+    position: absolute;
+    top: 140px;
+    left: 10vw;
+}
+
+
+.titleImage2 {
+    height: 500px;
+    position: absolute;
+    top: 140px;
+    right: 10vw;
+}
+
+.titleImage3 {
+    width: 500px;
+    position: absolute;
+    top: 240px;
+    left: calc(50vw - 250px);
+}
+
+.writer {
+    width: 100vw;
+    position: absolute;
+    top: 500px;
+    text-align: center;
+}
+
+.reviser {
+    width: 100vw;
+    position: absolute;
+    top: 525px;
+    text-align: center;
+}
+
+.intro {
+    width: 60vw;
+    margin: 0px auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.sliderContainer {
+    width: 100vw;
+    height: 400px;
+    display: block;
+    margin: 0px auto;
+}
+
+.sliderImage {
+    height: 400px;
+    border-radius: 5px;
+    display: block;
+    margin: 0px auto;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .titleContainer {
+        width: 100vw;
+        height: 50vw;
+    }
+
+    .titleImage1 {
+        height: 40vw;
+        top: calc(140px + 10vw);
+        left: 0vw;
+    }
+    
+    .titleImage2 {
+        height: 40vw;
+        top: calc(140px + 10vw);
+        right: 0vw;
+    }
+
+    .titleImage3 {
+        width: 40vw;
+        top: calc(140px + 10vw);
+        left: 30vw;
+    }
+
+    .writer {
+        font-size: 2vw;
+        top: calc(140px + 35vw);
+    }
+    
+    .reviser {
+        font-size: 2vw;
+        top: calc(140px + 38vw);
+    }
+    
+    .intro {
+        width: 90vw;
+        font-size: 2rem;
+    }
+    
+    .sliderContainer {
+        width: 100vw;
+        height: fit-content;
+        display: block;
+        margin: 0px auto;
+    }
+    
+    .sliderImage {
+        height: 50vw;
+        border-radius: 5px;
+    }
+}
