@@ -8,8 +8,8 @@ export default function Home() {
     return (
         <div className={styles.container}>
             <div className={styles.containerLeft}>
-                <Link to={"/archive"} className={styles.button}>
-                    Archive
+                <Link to={"/articles"} className={styles.button}>
+                    Articles
                 </Link>
 
                 <Link to={"/achievements"} className={styles.button}>

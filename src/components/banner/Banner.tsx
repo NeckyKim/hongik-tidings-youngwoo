@@ -21,25 +21,25 @@ export default function Banner(props: BannerProps) {
         window.addEventListener("resize", () => { setWidth(window.innerWidth) });
     });
 
-    
+
 
     function BannerBottomLeft() {
         return (
             <div className={styles.bannerBottomLeft}>
-            <div />
+                <div />
 
-            <div className={styles.yearMonth}>
-                {props.year}.{props.month}
+                <div className={styles.yearMonth}>
+                    {props.year}.{props.month}
+                </div>
+
+                <div className={styles.keyword}>
+                    {props.keyword}
+                </div>
+
+                <button className={styles.eBookButton} onClick={() => { window.open(props.link) }}>
+                    View e-Book
+                </button>
             </div>
-
-            <div className={styles.keyword}>
-                {props.keyword}
-            </div>
-
-            <button className={styles.eBookButton} onClick={() => { window.open(props.link) }}>
-                View e-Book
-            </button>
-        </div>
         )
     }
 
@@ -48,10 +48,10 @@ export default function Banner(props: BannerProps) {
     function BannerBottomRight() {
         return (
             <div className={styles.bannerBottomRight}>
-            <img className={styles.tidings} src={process.env.PUBLIC_URL + "/logos/tidings.png"} />
+                <img className={styles.cover} src={process.env.PUBLIC_URL + "/covers/" + props.year + "-" + props.month + ".png"} />
 
-            <img className={styles.cover} src={process.env.PUBLIC_URL + "/covers/" + props.year + "-" + props.month + ".png"} />
-        </div>
+                <img className={styles.tidings} src={process.env.PUBLIC_URL + "/logos/tidings.png"} />
+            </div>
         )
     }
 
@@ -64,7 +64,7 @@ export default function Banner(props: BannerProps) {
             </div>
 
             {
-                width > 500
+                width > 600
 
                     ?
 

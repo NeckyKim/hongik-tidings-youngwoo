@@ -1,11 +1,11 @@
 import Button from './Button';
 import { articlesDatabase } from '../articles/ArticlesDatabase';
 
-import styles from './Archive.module.css'
+import styles from './Articles.module.css'
 
 
 
-export default function Archive() {
+export default function Articles() {
     return (
         <div className={styles.buttonContainer}>
             {/* <Button id={articlesDatabase[0].id} section={articlesDatabase[0].section} title={articlesDatabase[0].title} year={articlesDatabase[0].year} month={articlesDatabase[0].month} /> */}

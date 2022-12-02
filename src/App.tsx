@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from './components/home/Home';
-import Archive from './components/archive/Archive';
+import Articles from './components/articles/Articles';
 import Achievements from './components/achievements/Achievements';
 import AboutMe from './components/aboutMe/AboutMe';
 
@@ -27,7 +27,7 @@ function App() {
 
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/archive" element={<Archive />} />
+                    <Route path="/articles" element={<Articles />} />
                     <Route path="/achievements" element={<Achievements />} />
                     {/* <Route path="/aboutme" element={<AboutMe />} /> */}
                     <Route path="/article/3" element={<Article03 />} />
