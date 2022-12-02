@@ -13,7 +13,7 @@
 
 .bannerBottom {
     display: grid;
-    grid-template-columns: 1fr 100px;
+    grid-template-columns: 1fr 120px;
     border-radius: 10px;
     padding: 20px;
     background-color: rgb(240, 240, 240);
@@ -51,20 +51,18 @@
 }
 
 .bannerBottomRight {
-    width: 100px;
-    border: 1px solid rgb(225, 225, 225);
+    width: 120px;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 125px 40px;
+    grid-template-rows: 160px 50px;
     align-items: center;
     justify-items: center;
 }
 
 .cover {
-    width: 100px;
-    height: 125px;
-    border: 1px solid rgb(225, 225, 225);
+    width: 120px;
+    height: 160px;
     border-radius: 5px;
 }
 
@@ -91,12 +89,13 @@
     }
 
     .bannerTop {
-        font-size: 1rem;
+        font-size: min(4vw, 1rem);
         text-align: center;
     }
 
     .bannerBottom {
         display: block;
+        padding: 5vw;
     }
 
     .eBookButton {
@@ -120,7 +119,7 @@
     }
     
     .tidings {
-        width: 80%;
+        width: 70%;
         height: auto;
     }
 }

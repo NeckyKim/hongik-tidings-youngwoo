@@ -116,22 +116,24 @@
     }
 
     .quote1 {
+        width: 30px;
         margin-left: 10vw;
     }
     
     .quote2 {
-        width: 50px;
-        margin-left: calc(90vw - 50px);
+        width: 30px;
+        margin-left: calc(90vw - 40px);
     }
     
     .intro1 {
-        width: 80vw;
+        width: 90vw;
         font-size: 2rem;
     }
     
     .intro2 {
-        width: 80vw;
+        width: 90vw;
         font-size: 1rem;
+        text-align: center;
     }
 
     .image {

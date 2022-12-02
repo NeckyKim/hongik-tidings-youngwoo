@@ -40,7 +40,7 @@
 
 @media screen and (max-width: 1000px) {
     .text {
-        font-size: min(1rem, 5vw);
+        font-size: min(1rem, 4vw);
         padding-left: 5vw;
     }
 }

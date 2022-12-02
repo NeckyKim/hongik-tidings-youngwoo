@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import HeaderBottom from '../../header/HeaderBottom';
 import Banner from '../../banner/Banner';
 import GetArticleInfo from '../../hooks/GetArticleInfo';
@@ -88,55 +90,67 @@ const data2 = [
 
 
 
-function Chart1() {
-    return (
-        <ResponsiveBar
-            data={data1}
-            keys={["value"]}
-            margin={{ top: 50, right: 20, bottom: 50, left: 50 }}
-            padding={0.2}
-            valueScale={{ type: 'linear' }}
-            indexScale={{ type: 'band', round: true }}
-            colors={["rgb(251, 189, 5)", "rgb(55, 202, 177)", "rgb(22, 146, 245)", "rgb(96, 67, 170)", "rgb(255, 27, 45)", "rgb(0, 191, 255)"]}
-            colorBy="indexValue"
-            borderRadius={5}
-            valueFormat=" >-.2%"
-            theme={{
-                fontFamily: "Pretendard"
-            }}
-        />
-    )
-}
-
-
-
-function Chart2() {
-    return (
-        <ResponsiveLine
-            data={data2}
-            margin={{ top: 50, right: 20, bottom: 50, left: 50 }}
-            xScale={{ type: 'point' }}
-            yScale={{
-                type: 'linear',
-                min: 'auto',
-                max: 'auto',
-            }}
-            yFormat=" >-.2%"
-            pointSize={10}
-            pointBorderColor={{ from: 'serieColor' }}
-            colors={["rgb(251, 189, 5)", "rgb(0, 191, 255)"]}
-            useMesh={true}
-            theme={{
-                fontFamily: "Pretendard"
-            }}
-        />
-    )
-}
-
-
 
 export default function Article08() {
     var articleInfo = GetArticleInfo();
+
+    const [width, setWidth] = useState<number>(window.innerWidth);
+
+    useEffect(() => {
+        window.addEventListener("resize", () => { setWidth(window.innerWidth) });
+    });
+
+
+
+    function Chart1() {
+        return (
+            <ResponsiveBar
+                data={data1}
+                keys={["value"]}
+                margin={{ top: 50, right: 20, bottom: 50, left: 50 }}
+                padding={0.2}
+                valueScale={{ type: 'linear' }}
+                indexScale={{ type: 'band', round: true }}
+                colors={["rgb(251, 189, 5)", "rgb(55, 202, 177)", "rgb(22, 146, 245)", "rgb(96, 67, 170)", "rgb(255, 27, 45)", "rgb(0, 191, 255)"]}
+                colorBy="indexValue"
+                borderRadius={5}
+                valueFormat=" >-.2%"
+                theme={{
+                    fontFamily: "Pretendard",
+                    fontSize: (width > 1000 ? 15 : 12)
+                }}
+            />
+        )
+    }
+    
+    
+    
+    function Chart2() {
+        return (
+            <ResponsiveLine
+                data={data2}
+                margin={{ top: 50, right: 20, bottom: 60, left: 50 }}
+                xScale={{ type: 'point' }}
+                yScale={{
+                    type: 'linear',
+                    min: 'auto',
+                    max: 'auto',
+                }}
+                yFormat=" >-.2%"
+                pointSize={10}
+                pointBorderColor={{ from: 'serieColor' }}
+                colors={["rgb(251, 189, 5)", "rgb(0, 191, 255)"]}
+                useMesh={true}
+                axisBottom={{
+                    tickRotation: -90
+                }}
+                theme={{
+                    fontFamily: "Pretendard",
+                    fontSize: (width > 1000 ? 15 : 12)
+                }}
+            />
+        )
+    }
 
 
 
