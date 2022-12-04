@@ -50,12 +50,47 @@ export default function AboutMe() {
                 </div>
             </div>
 
+
+
             <div className={styles.intro1}>
                 Frontend Engineer
             </div>
 
             <div className={styles.intro2}>
                 설계와 구현 뿐만아니라, 디자인도 조금 할 줄 아는 공대생
+            </div>
+            <br /><br /><br />
+
+
+
+            <div className={styles.career}>
+                <div>
+                    2017.3 ~
+                </div>
+
+                <div>
+                    홍익대학교 컴퓨터공학과 학사 과정
+                </div>
+            </div>
+
+            <div className={styles.career}>
+                <div>
+                    2017.3 ~
+                </div>
+
+                <div>
+                    홍익대학교 영자신문사 수습기자
+                </div>
+            </div>
+
+            <div className={styles.career}>
+                <div>
+                    2021.4 ~ 2021.8
+                </div>
+
+                <div>
+                    홍익대학교 영자신문사 정기자
+                </div>
             </div>
 
 
@@ -89,6 +124,7 @@ export default function AboutMe() {
             <div className={styles.iconContainer4}>
                 <Icon name="Amazon RDS" />
                 <Icon name="MySQL" />
+                <Icon name="MariaDB" />
             </div>
         </div>
     )

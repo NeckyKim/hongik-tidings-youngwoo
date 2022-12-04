@@ -18,7 +18,7 @@ export default function Articles() {
 
             <Button id={articlesDatabase[4].id} section={articlesDatabase[4].section} title={articlesDatabase[4].title} year={articlesDatabase[4].year} month={articlesDatabase[4].month} />
 
-            <Button id={articlesDatabase[5].id} section={articlesDatabase[5].section} title={articlesDatabase[5].title} year={articlesDatabase[5].year} month={articlesDatabase[5].month} />
+            {/* <Button id={articlesDatabase[5].id} section={articlesDatabase[5].section} title={articlesDatabase[5].title} year={articlesDatabase[5].year} month={articlesDatabase[5].month} /> */}
 
             <Button id={articlesDatabase[6].id} section={articlesDatabase[6].section} title={articlesDatabase[6].title} year={articlesDatabase[6].year} month={articlesDatabase[6].month} />
 
