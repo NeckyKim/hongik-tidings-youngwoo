@@ -40,12 +40,12 @@ export default function AboutMe() {
 
             }
 
-            
+
 
             <div className={switched ? styles.buttonContainerOff : styles.buttonContainerOn}>
                 <div className={switched ? styles.buttonOff : styles.buttonOn} onClick={() => { setSwitched(!switched) }}>
                     <div className={switched ? styles.buttonTextOff : styles.buttonTextOn}>
-                        {switched ? "REALITY" : "AVATAR"}
+                        {switched ? "Reality" : "Avatar"}
                     </div>
                 </div>
             </div>
@@ -75,6 +75,16 @@ export default function AboutMe() {
 
             <div className={styles.career}>
                 <div>
+                    2018.8 ~ 2020.6
+                </div>
+
+                <div>
+                    대한민국 공군 병역 의무 수행
+                </div>
+            </div>
+
+            <div className={styles.career}>
+                <div>
                     2017.3 ~
                 </div>
 
@@ -99,32 +109,49 @@ export default function AboutMe() {
                 What I can do
             </div>
 
+            <div className={styles.iconContainerWrapper}>
+                <div className={styles.iconContainerHeader}>
+                    Python
+                </div>
 
-            <div className={styles.iconContainer1}>
-                <Icon name="Python" />
-                <Icon name="Pandas" />
-                <Icon name="Selenium" />
-            </div>
+                <div className={styles.iconContainer1}>
+                    <Icon name="Python" />
+                    <Icon name="Pandas" />
+                    <Icon name="Selenium" />
+                </div>
 
-            <div className={styles.iconContainer2}>
-                <Icon name="HTML" />
-                <Icon name="CSS" />
-                <Icon name="JavaScript" />
-                <Icon name="TypeScript" />
-                <Icon name="React" />
-            </div>
+                <div className={styles.iconContainerHeader}>
+                    Web Development
+                </div>
 
-            <div className={styles.iconContainer3}>
-                <Icon name="Amazon EC2" />
-                <Icon name="Amazon Route53" />
-                <Icon name="Netlify" />
-                <Icon name="Firebase" />
-            </div>
+                <div className={styles.iconContainer2}>
+                    <Icon name="HTML" />
+                    <Icon name="CSS" />
+                    <Icon name="JavaScript" />
+                    <Icon name="TypeScript" />
+                    <Icon name="React" />
+                </div>
 
-            <div className={styles.iconContainer4}>
-                <Icon name="Amazon RDS" />
-                <Icon name="MySQL" />
-                <Icon name="MariaDB" />
+                <div className={styles.iconContainerHeader}>
+                    Hosting and Deployment
+                </div>
+
+                <div className={styles.iconContainer3}>
+                    <Icon name="Amazon EC2" />
+                    <Icon name="Amazon Route53" />
+                    <Icon name="Netlify" />
+                    <Icon name="Firebase" />
+                </div>
+
+                <div className={styles.iconContainerHeader}>
+                    Database
+                </div>
+
+                <div className={styles.iconContainer4}>
+                    <Icon name="Amazon RDS" />
+                    <Icon name="MySQL" />
+                    <Icon name="MariaDB" />
+                </div>
             </div>
         </div>
     )
