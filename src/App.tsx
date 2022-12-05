@@ -15,6 +15,8 @@ import Article06 from './components/articles/Article06/Article06';
 import Article07 from './components/articles/Article07/Article07';
 import Article08 from './components/articles/Article08/Article08';
 
+import ScrollToTop from './ScrollToTop';
+
 import './App.css';
 
 
@@ -43,6 +45,8 @@ function App() {
                 </Routes>
 
                 <Footer />
+
+                <ScrollToTop />
             </Router>
         </div>
     );

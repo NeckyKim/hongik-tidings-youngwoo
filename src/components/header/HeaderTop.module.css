@@ -13,6 +13,8 @@
     left: 0;
     bottom: 70px;
     z-index: 1;
+    display: grid;
+    grid-template-columns: 270px 1fr;
 }
 
 .headerLogo {
@@ -26,16 +28,36 @@
     cursor: pointer;
 }
 
-.headerIcon {
+.headerLogoIcon {
     height: 70px;
 }
 
-.headerText {
+.headerLogoText {
     font-size: 1.5rem;
     font-weight: 1000;
     line-height: 70px;
     text-align: left;
     margin-left: 10px;
+}
+
+.headerMenu {
+    height: 70px;
+    line-height: 70px;
+    padding-left: 6vw;
+}
+
+.headerMenuText {
+    width: fit-content;
+    height: 70px;
+    font-size: 1.2rem;
+    color: rgb(150, 150, 150);
+    text-align: center;
+    text-decoration: none;
+    padding-right: 3vw;
+}
+
+.headerMenuText:hover {
+    color: rgb(255, 255, 255);
 }
 
 
@@ -44,6 +66,7 @@
     .headerContainer {
         padding-left: 5vw;
         padding-right: 5vw;
+        grid-template-columns: 190px 1fr;
     }
 
     .headerLogo {
@@ -52,7 +75,7 @@
         padding-right: 10px;
     }
 
-    .headerText {
+    .headerLogoText {
         font-size: 1rem;
     }
 }
