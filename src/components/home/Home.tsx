@@ -45,20 +45,14 @@ export default function Home() {
             <div className={styles.container}>
                 <div className={styles.containerTop}>
                     <div className={styles.containerTopText}>
-                    archive-eng.html
+                        archive-eng.html
                     </div>
 
-                    <div className={styles.containerTopButton}>
-                        ＿
-                    </div>
+                    <img className={styles.containerTopButton} src={process.env.PUBLIC_URL + "/icons/homebutton1.png"} />
 
-                    <div className={styles.containerTopButton}>
-                        □
-                    </div>
+                    <img className={styles.containerTopButton} src={process.env.PUBLIC_URL + "/icons/homebutton2.png"} />
 
-                    <div className={styles.containerTopButton}>
-                        ×
-                    </div>
+                    <img className={styles.containerTopButton} src={process.env.PUBLIC_URL + "/icons/homebutton3.png"} />
                 </div>
 
                 <div className={styles.containerBottom}>

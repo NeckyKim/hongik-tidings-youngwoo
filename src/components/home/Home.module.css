@@ -1,12 +1,12 @@
 .wrapper {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 70px);
     display: grid;
     place-items: center;
 }
 
 .container {
-    width: 50vw;
+    width: 60vw;
 }
 
 .containerTop {
@@ -20,8 +20,7 @@
 }
 
 .containerTopText {
-    font-family: "JetBrains Mono", "Pretendard-Regular";
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 50px;
     margin-left: 20px;
     color: rgb(255, 255, 255);
@@ -29,9 +28,8 @@
 
 .containerTopButton {
     width: 50px;
-    line-height: 50px;
-    color: rgb(255, 255, 255);
-    text-align: center;
+
+    padding: 10px;
 }
 
 .containerTopText {
@@ -94,30 +92,22 @@
 
     .animationText {
         font-size: 1.5rem;
-        line-height: 40px;
     }
     
     .text1 {
         font-size: 1.5rem;
-        line-height: 40px;
     }
-    
     
     .text2 {
         font-size: 1.5rem;
-        line-height: 40px;
-        margin-left: 20px;
     }
     
     .text3 {
         font-size: 1.5rem;
-        line-height: 40px;
-        margin-left: 40px;
     }
     
     .text4{
         font-size: 1.5rem;
-        line-height: 40px;
     }
 }
 
@@ -134,15 +124,14 @@
     }
 
     .containerTopText {
-        font-size: min(4vw, 1.5rem);
+        font-size: min(4vw, 1.2rem);
         line-height: 40px;
-        margin-left: 3vw;
+        margin-left: 1vw;
     }
 
     .containerTopButton {
         width: 40px;
         height: 40px;
-        line-height: 40px;
     }
 
     .containerBottom {
@@ -152,31 +141,31 @@
 
     .animationText {
         font-size: min(4vw, 1.5rem);
-        line-height: min(5vw, 40px);
+        line-height: min(6vw, 40px);
         margin-left: 9vw;
     }
     
     .text1 {
         font-size: min(4vw, 1.5rem);
-        line-height: min(5vw, 40px);
+        line-height: min(6vw, 40px);
     }
     
     .text2 {
         font-size: min(4vw, 1.5rem);
-        line-height: min(5vw, 40px);
+        line-height: min(6vw, 40px);
         margin-left: 3vw;
     }
     
     .text3 {
         font-size: min(4vw, 1.5rem);
-        line-height: min(5vw, 40px);
+        line-height: min(6vw, 40px);
         margin-left: 6vw;
         display: block;
     }
     
     .text4{
         font-size: min(4vw, 1.5rem);
-        line-height: min(5vw, 40px);
+        line-height: min(6vw, 40px);
         margin-left: 6vw;
         display: block;
     }
