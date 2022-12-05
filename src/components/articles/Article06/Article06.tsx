@@ -2,31 +2,14 @@ import HeaderBottom from '../../header/HeaderBottom';
 import Banner from '../../banner/Banner';
 import GetArticleInfo from '../../hooks/GetArticleInfo';
 
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import articleStyles from '../ArticleStyle.module.css';
-import styles from './Article05.module.css';
 
 
 
 export default function Article06() {
     var articleInfo = GetArticleInfo();
 
-
-
-    const settings = {
-        dots: false,
-        fade: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 500,
-        autoplaySpeed: 3000,
-        pauseOnHover: false
-    };
 
 
     return (

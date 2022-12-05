@@ -5,6 +5,33 @@
     place-items: center;
 }
 
+.header {
+    font-size: 2rem;
+    font-weight: 1000;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.show {
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.hide {
+    font-size: 3rem;
+    color: transparent;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.lines {
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+}
+
 .container {
     width: 60vw;
 }
@@ -28,7 +55,6 @@
 
 .containerTopButton {
     width: 50px;
-
     padding: 10px;
 }
 

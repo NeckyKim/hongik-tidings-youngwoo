@@ -6,9 +6,9 @@ import styles from './Home.module.css';
 
 
 function TypingAnimation(props: { text: string }) {
-    const [text, setText] = useState("");
-    const [count, setCount] = useState(0);
-    const [increase, setIncrease] = useState(true);
+    const [text, setText] = useState<string>("");
+    const [count, setCount] = useState<number>(0);
+    const [increase, setIncrease] = useState<boolean>(true);
 
     const word = props.text;
 
@@ -34,7 +34,6 @@ function TypingAnimation(props: { text: string }) {
                 setText((prev) => {
                     if (count === 0) {
                         setIncrease(true);
-                        setText("");
 
                         return ""
                     }
@@ -46,12 +45,14 @@ function TypingAnimation(props: { text: string }) {
                     }
                 });
             }
-        }, 200);
+        }, 150);
 
         return () => {
             clearInterval(typingInterval);
         };
     });
+
+
 
     return (
         <span className={styles.animationText}>
@@ -62,7 +63,50 @@ function TypingAnimation(props: { text: string }) {
 
 
 
+
+function Keyword() {
+    const [index, setIndex] = useState<number>(0);
+
+    const keywords: string[] = ["성장", "도전", "노력"]
+
+    useEffect(() => {
+        const keywordInterval = setInterval(() => {
+            setIndex((prev) => prev + 1)
+        }, 5000);
+
+        return () => {
+            clearInterval(keywordInterval);
+        };
+    });
+
+    return (
+        <span>
+            <div className={index % 3 === 0 ? styles.show : styles.hide}>
+                {index % 3 === 0 && keywords[0]}
+            </div>
+
+            <div className={index % 3 === 1 ? styles.show : styles.hide}>
+                {index % 3 === 1 && keywords[1]}
+            </div>
+
+            <div className={index % 3 === 2 ? styles.show : styles.hide}>
+                {index % 3 === 2 && keywords[2]}
+            </div>
+        </span>
+    )
+}
+
+
+
 export default function Home() {
+    const [width, setWidth] = useState<number>(window.innerWidth);
+
+    useEffect(() => {
+        window.addEventListener("resize", () => { setWidth(window.innerWidth) });
+    });
+
+
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.container}>
@@ -94,29 +138,20 @@ export default function Home() {
                     <span className={styles.text3}>
                         &lt;h1&gt;
                     </span>
-                    <TypingAnimation text={"Welcome to archive-eng"} />
+                    <TypingAnimation text={"Welcome to archive-eng!"} />
                     <span className={styles.text4}>
                         &lt;/h1&gt;
                     </span>
-                    <br />
+                    {width >= 1000 && <br />}
 
                     <span className={styles.text3}>
                         &lt;h2&gt;
                     </span>
-                    <TypingAnimation text={"안녕하세요, 성장하는 개발자 김영우입니다."} />
+                    <TypingAnimation text={"My name is Young-Woo Kim"} />
                     <span className={styles.text4}>
                         &lt;/h2&gt;
                     </span>
-                    <br />
-
-                    <span className={styles.text3}>
-                        &lt;p&gt;
-                    </span>
-                    <TypingAnimation text={"프론트 엔드 개발자가 되는게 목표입니다."} />
-                    <span className={styles.text4}>
-                        &lt;/p&gt;
-                    </span>
-                    <br />
+                    {width >= 1000 && <br />}
 
                     <div className={styles.text2}>
                         &lt;/body&gt;
@@ -124,6 +159,23 @@ export default function Home() {
 
                     <div className={styles.text1}>
                         &lt;/html&gt;
+                    </div>
+                </div>
+
+                <div className={styles.header}>
+                    <div className={styles.lines}>
+                        안녕하세요.
+                    </div>
+                    {width < 650 ? <br /> : <span>&nbsp;</span>}
+
+                    <Keyword />
+                    <div className={styles.lines}>
+                        하는 개발자,&nbsp;
+                    </div>
+                    {width < 650 ? <br /> : <span>&nbsp;</span>}
+
+                    <div className={styles.lines}>
+                        김영우입니다.
                     </div>
                 </div>
             </div>
