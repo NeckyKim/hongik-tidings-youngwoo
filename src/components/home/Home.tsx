@@ -8,21 +8,44 @@ import styles from './Home.module.css';
 function TypingAnimation(props: { text: string }) {
     const [text, setText] = useState("");
     const [count, setCount] = useState(0);
+    const [increase, setIncrease] = useState(true);
+
     const word = props.text;
 
     useEffect(() => {
         const typingInterval = setInterval(() => {
-            setText((prev) => {
-                let result = prev ? prev + word[count] : word[0];
-                setCount(count + 1);
+            if (increase) {
+                setText((prev) => {
+                    if (count === word.length) {
+                        setIncrease(false);
 
-                if (count >= word.length) {
-                    setCount(0);
-                    setText("");
-                }
+                        return word
+                    }
 
-                return result;
-            });
+                    else {
+                        setCount(count + 1);
+
+                        return prev + word[count];
+                    }
+                });
+            }
+
+            else {
+                setText((prev) => {
+                    if (count === 0) {
+                        setIncrease(true);
+                        setText("");
+
+                        return ""
+                    }
+
+                    else {
+                        setCount(count - 1);
+
+                        return prev.substring(0, count);
+                    }
+                });
+            }
         }, 200);
 
         return () => {
@@ -71,7 +94,7 @@ export default function Home() {
                     <span className={styles.text3}>
                         &lt;h1&gt;
                     </span>
-                    <TypingAnimation text={"Welcome to archive-eng          "} />
+                    <TypingAnimation text={"Welcome to archive-eng"} />
                     <span className={styles.text4}>
                         &lt;/h1&gt;
                     </span>
@@ -80,10 +103,20 @@ export default function Home() {
                     <span className={styles.text3}>
                         &lt;h2&gt;
                     </span>
-                    <TypingAnimation text={"안녕하세요, 성장하는 개발자 김영우입니다.         "} />
+                    <TypingAnimation text={"안녕하세요, 성장하는 개발자 김영우입니다."} />
                     <span className={styles.text4}>
                         &lt;/h2&gt;
                     </span>
+                    <br />
+
+                    <span className={styles.text3}>
+                        &lt;p&gt;
+                    </span>
+                    <TypingAnimation text={"프론트 엔드 개발자가 되는게 목표입니다."} />
+                    <span className={styles.text4}>
+                        &lt;/p&gt;
+                    </span>
+                    <br />
 
                     <div className={styles.text2}>
                         &lt;/body&gt;
