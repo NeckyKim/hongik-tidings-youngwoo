@@ -63,7 +63,6 @@ function TypingAnimation(props: { text: string }) {
 
 
 
-
 function Keyword() {
     const [index, setIndex] = useState<number>(0);
 
