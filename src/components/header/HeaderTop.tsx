@@ -59,15 +59,15 @@ export default function HeaderTop() {
                                 &&
 
                                 <div className={styles.headerMenuContainer}>
-                                    <Link to={"/articles"} className={styles.headerMenuContainerButton}>
+                                    <Link to={"/articles"} className={styles.headerMenuContainerButton} onClick={() => { setClicked(false); }}>
                                         Articles
                                     </Link>
 
-                                    <Link to={"/achievements"} className={styles.headerMenuContainerButton}>
+                                    <Link to={"/achievements"} className={styles.headerMenuContainerButton} onClick={() => { setClicked(false); }}>
                                         Achievements
                                     </Link>
 
-                                    <Link to={"/aboutme"} className={styles.headerMenuContainerButton}>
+                                    <Link to={"/aboutme"} className={styles.headerMenuContainerButton} onClick={() => { setClicked(false); }}>
                                         About Me
                                     </Link>
                                 </div>
