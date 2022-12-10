@@ -6,30 +6,30 @@
 }
 
 .header {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 1000;
-    text-align: center;
+    text-align: left;
     margin-top: 50px;
-}
-
-.show {
-    font-size: 3rem;
-    color: rgb(0, 0, 0);
-    display: inline-block;
-    transition: 0.5s;
-}
-
-.hide {
-    font-size: 3rem;
-    color: transparent;
-    display: inline-block;
-    transition: 0.5s;
 }
 
 .lines {
     height: 60px;
     line-height: 60px;
     display: inline-block;
+}
+
+.show {
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.hide {
+    font-size: 2.5rem;
+    color: transparent;
+    display: inline-block;
+    transition: 0.5s;
 }
 
 .container {
@@ -102,7 +102,7 @@
     margin-left: 60px;
 }
 
-.text4{
+.text4 {
     font-family: "JetBrains Mono", "Pretendard-Regular";
     font-size: 2rem;
     font-weight: 1000;
@@ -119,20 +119,20 @@
     .animationText {
         font-size: 1.5rem;
     }
-    
+
     .text1 {
         font-size: 1.5rem;
     }
-    
+
     .text2 {
         font-size: 1.5rem;
     }
-    
+
     .text3 {
         font-size: 1.5rem;
     }
-    
-    .text4{
+
+    .text4 {
         font-size: 1.5rem;
     }
 }
@@ -140,6 +140,11 @@
 
 
 @media screen and (max-width: 1000px) {
+    .lines {
+        height: 40px;
+        line-height: 40px;
+    }
+
     .container {
         width: 90vw;
     }
@@ -170,26 +175,26 @@
         line-height: min(6vw, 40px);
         margin-left: 9vw;
     }
-    
+
     .text1 {
         font-size: min(4vw, 1.5rem);
         line-height: min(6vw, 40px);
     }
-    
+
     .text2 {
         font-size: min(4vw, 1.5rem);
         line-height: min(6vw, 40px);
         margin-left: 3vw;
     }
-    
+
     .text3 {
         font-size: min(4vw, 1.5rem);
         line-height: min(6vw, 40px);
         margin-left: 6vw;
         display: block;
     }
-    
-    .text4{
+
+    .text4 {
         font-size: min(4vw, 1.5rem);
         line-height: min(6vw, 40px);
         margin-left: 6vw;
