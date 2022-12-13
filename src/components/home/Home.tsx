@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
 
+import Keywords from '../Keywords';
+
 import styles from './Home.module.css';
 
 
@@ -60,40 +62,6 @@ function TypingAnimation(props: { text: string }) {
         </span>
     )
 };
-
-
-
-function Keyword() {
-    const [index, setIndex] = useState<number>(0);
-
-    const keywords: string[] = ["성장", "도전", "노력"]
-
-    useEffect(() => {
-        const keywordInterval = setInterval(() => {
-            setIndex((prev) => prev + 1)
-        }, 5000);
-
-        return () => {
-            clearInterval(keywordInterval);
-        };
-    });
-
-    return (
-        <span>
-            <div className={index % 3 === 0 ? styles.show : styles.hide}>
-                {index % 3 === 0 && keywords[0]}
-            </div>
-
-            <div className={index % 3 === 1 ? styles.show : styles.hide}>
-                {index % 3 === 1 && keywords[1]}
-            </div>
-
-            <div className={index % 3 === 2 ? styles.show : styles.hide}>
-                {index % 3 === 2 && keywords[2]}
-            </div>
-        </span>
-    )
-}
 
 
 
@@ -161,13 +129,18 @@ export default function Home() {
                     </div>
                 </div>
 
+
+
                 <div className={styles.header}>
                     <div className={styles.lines}>
                         안녕하세요.
                     </div>
                     {width < 650 ? <br /> : <span>&nbsp;</span>}
 
-                    <Keyword />
+                    <Keywords keywords={["성장", "도전", "노력"]}/>
+                    
+
+                    
                     <div className={styles.lines}>
                         하는 개발자,&nbsp;
                     </div>
