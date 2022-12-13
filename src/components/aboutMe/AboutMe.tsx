@@ -79,13 +79,13 @@ export default function AboutMe() {
                 </div>
 
                 <div>
-                    대한민국 공군 병역 의무 수행
+                    대한민국 공군 병장 만기전역
                 </div>
             </div>
 
             <div className={styles.career}>
                 <div>
-                    2017.3 ~
+                    2021.4 ~ 2021.8
                 </div>
 
                 <div>
@@ -95,7 +95,7 @@ export default function AboutMe() {
 
             <div className={styles.career}>
                 <div>
-                    2021.4 ~ 2021.8
+                    2021.8 ~
                 </div>
 
                 <div>
