@@ -1,0 +1,46 @@
+.image1 {
+    width: 600px;
+    display: block;
+    margin: 0px auto;
+}
+
+.sliderContainer {
+    width: 69vw;
+    height: 23vw;
+    display: block;
+    margin: 0px auto;
+}
+
+.sliderImage {
+    width: 23vw;
+    height: 23vw;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.questionAnswerContainer {
+    width: 60vw;
+    margin: 0px auto;
+    background-color: rgb(153, 188, 210);
+    padding: 2vw;
+    border-radius: 10px;
+}
+
+.question {
+    width: 30vw;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.answer{
+    width: 30vw;
+    height: fit-content;
+    background-color: rgb(253, 240, 26);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 26vw;
+}

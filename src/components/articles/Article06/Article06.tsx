@@ -2,13 +2,30 @@ import HeaderBottom from '../../header/HeaderBottom';
 import Banner from '../../banner/Banner';
 import GetArticleInfo from '../../hooks/GetArticleInfo';
 
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import articleStyles from '../ArticleStyle.module.css';
+import styles from './Article06.module.css';
 
 
 
 export default function Article06() {
     var articleInfo = GetArticleInfo();
+
+
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 500,
+        autoplaySpeed: 3000,
+        pauseOnHover: false
+    };
 
 
 
@@ -50,13 +67,19 @@ export default function Article06() {
                 A rapid antigen test uses the immunochromatography method. This is combination of immune response(antigen-antibody reaction) and a chromatography technique. When users open the kit, there will be a cotton swab, extraction tube, and test strip.
             </div>
 
+            <img className={styles.image1} src={process.env.PUBLIC_URL + "/articles/6/2-1.png"} />
+
             <div className={articleStyles.paragraph}>
                 First, take the sample from your nose with a cotton swab and put this swab into the extraction tube to dilute it. If the analyte in the extraction tube is dropped onto the test strip kit, it flows to the other side. At this time, the analyte is combined with the labeled antibody on the strip and forms the analyte-labeled antibody complex.
             </div>
 
+            <img className={styles.image1} src={process.env.PUBLIC_URL + "/articles/6/2-2.png"} />
+
             <div className={articleStyles.paragraph}>
                 As the analyte-labeled antibody complex continues to spread, it is combined with the primary antibody on the test line. This is called a sandwich complex, because it consists of three layers: labeled antibody, analyte, and primary antibody.
             </div>
+
+            <img className={styles.image1} src={process.env.PUBLIC_URL + "/articles/6/2-3.png"} />
 
             <div className={articleStyles.paragraph}>
                 After forming the sandwich complex, the remaining analyte-labeled antibody complex binds to a secondary antibody on the control line. This control line is used to determine if the patient is positive or negative. If lines appear on both the test and control line, the test result is positive.
@@ -71,6 +94,93 @@ export default function Article06() {
             <div className={articleStyles.subtitle}>
                 Proper Ways to Use Self-test Kit
             </div>
+
+            <div className={styles.sliderContainer}>
+
+
+                <Slider {...settings}>
+                    <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-1.png"} />
+
+                    <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-2.png"} />
+
+                    <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-3.png"} />
+
+                    <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-4.png"} />
+
+                    <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-5.png"} />
+
+                    <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-6.png"} />
+
+                    <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-7.png"} />
+
+                    <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-8.png"} />
+                </Slider>
+            </div>
+
+            <div className={articleStyles.source}>
+                (Source) Korean Government Briefing Official Website, www.korea.kr
+            </div>
+
+
+
+            <div className={articleStyles.subtitle}>
+                Frequently Asked Questions
+            </div>
+
+            <div className={styles.questionAnswerContainer}>
+                <div className={styles.question}>
+                    Q. What’s the difference between a test kit for professional use and personal use?
+                </div>
+
+                <div className={styles.answer}>
+                    A. For professional use, the medical staff performs the whole test procedure, from collecting samples to deciding results, and the personal test is done by the user. There is also a slight difference in collecting samples. In a personal test kit, put the swab 1.5 to 2 cm inside the nostril and rub it around 10 times to collect a sample. On the other hand, for a professional test kit, cotton swabs are inserted much deeper into the nasopharynx of the nostrils.
+                </div>
+                <br /><br />
+
+
+
+                <div className={styles.question}>
+                    Q. Is the test positive even if the T-line is very faint?
+                </div>
+
+                <div className={styles.answer}>
+                    A. Even, if you see a very faint line, the test is determined as positive.
+                </div>
+                <br /><br />
+
+
+
+                <div className={styles.question}>
+                    Q. After a very long time, the kit showed a positive sign.
+                </div>
+
+                <div className={styles.answer}>
+                    A. Please keep the testing time between 15 to 30 minutes. If you see the line after that, please proceed with a new test.
+                </div>
+                <br /><br />
+
+
+
+                <div className={styles.question}>
+                    Q. I heard that it’s more accurate if samples are taken from the throat, instead of the nose.
+                </div>
+
+                <div className={styles.answer}>
+                    A. It’s dangerous for people to collect samples from their throats with a cotton swab. The length of the swab is short and thick, so when you put it to your throat and rub it, it can hurt the roof of your mouth and throat.
+                </div>
+                <br /><br />
+
+
+
+                <div className={styles.question}>
+                    Q. How do I dispose of the test kit after using it?
+                </div>
+
+                <div className={styles.answer}>
+                    A. If the result is positive, please take the kit to a public health center or temporary screening clinic. Then, discard it with COVID-19 quarantine medical waste. If it is negative, you can throw it away in a garbage bag.
+                </div>
+            </div>
+
 
 
             <Banner year={articleInfo.year} month={articleInfo.month} chiefEditor={articleInfo.chiefEditor} keyword={articleInfo.keyword} link={articleInfo.link} />

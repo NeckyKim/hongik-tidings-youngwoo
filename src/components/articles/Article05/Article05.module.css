@@ -105,14 +105,15 @@
     }
     
     .sliderContainer {
-        width: 100vw;
+        width: 90vw;
         height: fit-content;
         display: block;
         margin: 0px auto;
     }
     
     .sliderImage {
-        height: 50vw;
+        width: fit-content;
+        height: 40vw;
         border-radius: 5px;
     }
 }
