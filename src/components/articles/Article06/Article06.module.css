@@ -1,3 +1,10 @@
+.titleContainer {
+    width: 100vw;
+    height: 500px;
+    margin-bottom: 50px;
+    background-color: rgb(220, 220, 220);
+}
+
 .image1 {
     width: 600px;
     display: block;
@@ -14,33 +21,120 @@
 .sliderImage {
     width: 23vw;
     height: 23vw;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 10px;
 }
 
-.questionAnswerContainer {
+.questionAnswerContainer1 {
     width: 60vw;
+    font-size: 2rem;
     margin: 0px auto;
+    margin-top: 100px;
+    margin-bottom: 1px;
+    text-align: center;
     background-color: rgb(153, 188, 210);
     padding: 2vw;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.questionAnswerContainer2 {
+    width: 60vw;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    background-color: rgb(153, 188, 210);
+    padding: 2vw;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.questionContainer {
+    display: grid;
+    grid-template-columns: 60px 16px 30vw;
+    margin-bottom: 20px;
 }
 
 .question {
     width: 30vw;
     height: fit-content;
+    font-size: 1.2rem;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     padding: 10px;
-    margin-bottom: 10px;
+    text-align: justify;
 }
 
-.answer{
+.answerContainer {
+    display: grid;
+    grid-template-columns: 30vw 26px 60px;
+    margin-bottom: 20px;
+    margin-left: calc(26vw - 76px);
+}
+
+.answer {
     width: 30vw;
     height: fit-content;
+    font-size: 1.2rem;
     background-color: rgb(253, 240, 26);
     border-radius: 5px;
     padding: 10px;
-    margin-bottom: 10px;
-    margin-left: 26vw;
+    text-align: justify;
+}
+
+.questionAnswerImage {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+}
+
+.triangle1 {
+    width: 8px;
+    height: 8px;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid rgb(255, 255, 255);
+    border-left: 8px solid transparent;
+    border-right: 8px solid rgb(255, 255, 255);
+    margin-top: 16px;
+}
+
+.triangle2 {
+    width: 8px;
+    height: 8px;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid rgb(253, 240, 26);
+    border-left: 8px solid rgb(253, 240, 26);
+    border-right: 8px solid transparent;
+    margin-top: 16px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .questionAnswerContainer1 {
+        width: 90vw;
+        font-size: 1.2rem;
+        padding: 5vw;
+    }
+    
+    .questionAnswerContainer2 {
+        width: 90vw;
+        padding: 5vw;
+    }
+
+    .questionContainer {
+        grid-template-columns: 60px 16px 1fr;
+    }
+
+    .question {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .answerContainer {
+        grid-template-columns: 1fr 26px 50px;
+    }
+
+    .answer {
+        width: 100%;
+        font-size: 0.8rem;
+    }
 }

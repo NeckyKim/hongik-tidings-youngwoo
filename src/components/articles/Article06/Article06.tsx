@@ -35,6 +35,8 @@ export default function Article06() {
 
 
 
+            <div className={styles.titleContainer} />
+
             <div className={articleStyles.paragraph}>
                 It has been two years since the COVID-19 virus began. Humans have invented new vaccines and virus technology to survive the war against this virus. At the same time, new  variants of the virus are being spread and detected. In Korea, the daily number of confirmed cases of the virus was on the rise until the middle of March, when on March 16th, the highest number of confirmed cases was 621,328. As the number exploded due to the fast spread of the Omicron variant,  the health care system could not keep up with the demand for only PCR tests . Therefore, the government and the Ministry of Health and Welfare decided to introduce self-test kits and rapid antigen tests to the public.
             </div>
@@ -123,61 +125,120 @@ export default function Article06() {
 
 
 
-            <div className={articleStyles.subtitle}>
+            <div className={styles.questionAnswerContainer1}>
                 Frequently Asked Questions
             </div>
 
-            <div className={styles.questionAnswerContainer}>
-                <div className={styles.question}>
-                    Q. What’s the difference between a test kit for professional use and personal use?
+            <div className={styles.questionAnswerContainer2}>
+                <div className={styles.questionContainer}>
+                    <img className={styles.questionAnswerImage} src={process.env.PUBLIC_URL + "/articles/6/4-1.png"} />
+
+                    <div className={styles.triangle1} />
+
+                    <div className={styles.question}>
+                        What's the difference between a test kit for professional use and personal use?
+                    </div>
                 </div>
 
-                <div className={styles.answer}>
-                    A. For professional use, the medical staff performs the whole test procedure, from collecting samples to deciding results, and the personal test is done by the user. There is also a slight difference in collecting samples. In a personal test kit, put the swab 1.5 to 2 cm inside the nostril and rub it around 10 times to collect a sample. On the other hand, for a professional test kit, cotton swabs are inserted much deeper into the nasopharynx of the nostrils.
-                </div>
-                <br /><br />
+                <div className={styles.answerContainer}>
+                    <div className={styles.answer}>
+                        For professional use, the medical staff performs the whole test procedure, from collecting samples to deciding results, and the personal test is done by the user. There is also a slight difference in collecting samples. In a personal test kit, put the swab 1.5 to 2 cm inside the nostril and rub it around 10 times to collect a sample. On the other hand, for a professional test kit, cotton swabs are inserted much deeper into the nasopharynx of the nostrils.
+                    </div>
 
+                    <div className={styles.triangle2} />
 
-
-                <div className={styles.question}>
-                    Q. Is the test positive even if the T-line is very faint?
-                </div>
-
-                <div className={styles.answer}>
-                    A. Even, if you see a very faint line, the test is determined as positive.
-                </div>
-                <br /><br />
-
-
-
-                <div className={styles.question}>
-                    Q. After a very long time, the kit showed a positive sign.
-                </div>
-
-                <div className={styles.answer}>
-                    A. Please keep the testing time between 15 to 30 minutes. If you see the line after that, please proceed with a new test.
+                    <img className={styles.questionAnswerImage} src={process.env.PUBLIC_URL + "/articles/6/4-2.png"} />
                 </div>
                 <br /><br />
 
 
 
-                <div className={styles.question}>
-                    Q. I heard that it’s more accurate if samples are taken from the throat, instead of the nose.
+                <div className={styles.questionContainer}>
+                    <img className={styles.questionAnswerImage} src={process.env.PUBLIC_URL + "/articles/6/4-1.png"} />
+
+                    <div className={styles.triangle1} />
+
+                    <div className={styles.question}>
+                        Is the test positive even if the T-line is very faint?
+                    </div>
                 </div>
 
-                <div className={styles.answer}>
-                    A. It’s dangerous for people to collect samples from their throats with a cotton swab. The length of the swab is short and thick, so when you put it to your throat and rub it, it can hurt the roof of your mouth and throat.
+                <div className={styles.answerContainer}>
+                    <div className={styles.answer}>
+                        Even, if you see a very faint line, the test is determined as positive.
+                    </div>
+
+                    <div className={styles.triangle2} />
+
+                    <img className={styles.questionAnswerImage} src={process.env.PUBLIC_URL + "/articles/6/4-2.png"} />
                 </div>
                 <br /><br />
 
 
 
-                <div className={styles.question}>
-                    Q. How do I dispose of the test kit after using it?
+                <div className={styles.questionContainer}>
+                    <img className={styles.questionAnswerImage} src={process.env.PUBLIC_URL + "/articles/6/4-1.png"} />
+
+                    <div className={styles.triangle1} />
+
+                    <div className={styles.question}>
+                        After a very long time, the kit showed a positive sign.
+                    </div>
                 </div>
 
-                <div className={styles.answer}>
-                    A. If the result is positive, please take the kit to a public health center or temporary screening clinic. Then, discard it with COVID-19 quarantine medical waste. If it is negative, you can throw it away in a garbage bag.
+                <div className={styles.answerContainer}>
+                    <div className={styles.answer}>
+                        Please keep the testing time between 15 to 30 minutes. If you see the line after that, please proceed with a new test.
+                    </div>
+                    <div className={styles.triangle2} />
+
+                    <img className={styles.questionAnswerImage} src={process.env.PUBLIC_URL + "/articles/6/4-2.png"} />
+                </div>
+                <br /><br />
+
+
+
+                <div className={styles.questionContainer}>
+                    <img className={styles.questionAnswerImage} src={process.env.PUBLIC_URL + "/articles/6/4-1.png"} />
+
+                    <div className={styles.triangle1} />
+
+                    <div className={styles.question}>
+                        I heard that it's more accurate if samples are taken from the throat, instead of the nose.
+                    </div>
+                </div>
+
+                <div className={styles.answerContainer}>
+                    <div className={styles.answer}>
+                        It's dangerous for people to collect samples from their throats with a cotton swab. The length of the swab is short and thick, so when you put it to your throat and rub it, it can hurt the roof of your mouth and throat.
+                    </div>
+
+                    <div className={styles.triangle2} />
+
+                    <img className={styles.questionAnswerImage} src={process.env.PUBLIC_URL + "/articles/6/4-2.png"} />
+                </div>
+                <br /><br />
+
+
+
+                <div className={styles.questionContainer}>
+                    <img className={styles.questionAnswerImage} src={process.env.PUBLIC_URL + "/articles/6/4-1.png"} />
+
+                    <div className={styles.triangle1} />
+
+                    <div className={styles.question}>
+                        How do I dispose of the test kit after using it?
+                    </div>
+                </div>
+
+                <div className={styles.answerContainer}>
+                    <div className={styles.answer}>
+                        If the result is positive, please take the kit to a public health center or temporary screening clinic. Then, discard it with COVID-19 quarantine medical waste. If it is negative, you can throw it away in a garbage bag.
+                    </div>
+
+                    <div className={styles.triangle2} />
+
+                    <img className={styles.questionAnswerImage} src={process.env.PUBLIC_URL + "/articles/6/4-2.png"} />
                 </div>
             </div>
 
