@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import HeaderBottom from '../../header/HeaderBottom';
 import Banner from '../../banner/Banner';
 import GetArticleInfo from '../../hooks/GetArticleInfo';
@@ -14,12 +16,18 @@ import styles from './Article06.module.css';
 export default function Article06() {
     var articleInfo = GetArticleInfo();
 
+    const [width, setWidth] = useState<number>(window.innerWidth);
+
+    useEffect(() => {
+        window.addEventListener("resize", () => { setWidth(window.innerWidth) });
+    });
+
 
 
     const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: width > 1000 ? 3 : 1,
         slidesToScroll: 1,
         autoplay: true,
         speed: 500,
@@ -36,6 +44,21 @@ export default function Article06() {
 
 
             <div className={styles.titleContainer} />
+
+            <div className={styles.title1}>
+                Information About<br />
+                COVID-19 Test Kits
+            </div>
+
+            <div className={styles.writer}>
+                Written by Kim Young-Woo
+            </div>
+
+            <div className={styles.reviser}>
+                Revised by Prof. Jeff T. Vandeweerd
+            </div>
+
+
 
             <div className={articleStyles.paragraph}>
                 It has been two years since the COVID-19 virus began. Humans have invented new vaccines and virus technology to survive the war against this virus. At the same time, new  variants of the virus are being spread and detected. In Korea, the daily number of confirmed cases of the virus was on the rise until the middle of March, when on March 16th, the highest number of confirmed cases was 621,328. As the number exploded due to the fast spread of the Omicron variant,  the health care system could not keep up with the demand for only PCR tests . Therefore, the government and the Ministry of Health and Welfare decided to introduce self-test kits and rapid antigen tests to the public.
@@ -149,7 +172,6 @@ export default function Article06() {
 
                     <img className={styles.questionAnswerImage} src={process.env.PUBLIC_URL + "/articles/6/4-2.png"} />
                 </div>
-                <br /><br />
 
 
 
@@ -172,7 +194,6 @@ export default function Article06() {
 
                     <img className={styles.questionAnswerImage} src={process.env.PUBLIC_URL + "/articles/6/4-2.png"} />
                 </div>
-                <br /><br />
 
 
 
@@ -194,7 +215,6 @@ export default function Article06() {
 
                     <img className={styles.questionAnswerImage} src={process.env.PUBLIC_URL + "/articles/6/4-2.png"} />
                 </div>
-                <br /><br />
 
 
 
@@ -217,7 +237,6 @@ export default function Article06() {
 
                     <img className={styles.questionAnswerImage} src={process.env.PUBLIC_URL + "/articles/6/4-2.png"} />
                 </div>
-                <br /><br />
 
 
 
