@@ -45,9 +45,16 @@ export default function Article06() {
 
             <div className={styles.titleContainer} />
 
-            <div className={styles.title1}>
-                Information About<br />
+            <img className={styles.titleImage} src={process.env.PUBLIC_URL + "/articles/6/1.png"} />
+
+            <div className={styles.title}>
+                <div className={styles.title1}>
+                Information About
+                </div>
+
+                <div className={styles.title2}>
                 COVID-19 Test Kits
+                </div>               
             </div>
 
             <div className={styles.writer}>

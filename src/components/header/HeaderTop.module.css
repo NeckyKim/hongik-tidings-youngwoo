@@ -30,11 +30,17 @@
 
 .headerLogoIcon {
     height: 70px;
+    padding: 5px;
+    margin-left: -5px;
+    transition: 0.5s;
+}
+
+.headerLogo:hover > .headerLogoIcon {
+    filter: invert();
 }
 
 .headerLogoText {
     font-size: 1.5rem;
-    font-weight: 1000;
     line-height: 70px;
     text-align: left;
     margin-left: 10px;
@@ -108,7 +114,13 @@
         padding-right: 10px;
     }
 
+    .headerLogoIcon {
+        padding: 10px;
+        margin-left: 0px;
+    }
+
     .headerLogoText {
         font-size: 1rem;
+        margin-left: 0px;
     }
 }

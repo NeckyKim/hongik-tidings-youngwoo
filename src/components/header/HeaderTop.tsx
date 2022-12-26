@@ -20,8 +20,8 @@ export default function HeaderTop() {
     return (
         <div>
             <div className={styles.headerContainer}>
-                <div className={styles.headerLogo} onClick={() => { navigate("/") }}>
-                    <img className={styles.headerLogoIcon} src={process.env.PUBLIC_URL + "/logos/icon.png"} />
+                <div className={styles.headerLogo} onClick={() => { navigate("/"); }}>
+                    <img className={styles.headerLogoIcon} src={process.env.PUBLIC_URL + "/logos/icon_black.png"} />
 
                     <div className={styles.headerLogoText}>
                         archive-eng

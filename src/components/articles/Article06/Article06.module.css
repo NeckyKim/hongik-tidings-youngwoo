@@ -5,30 +5,48 @@
     background-color: rgb(0, 49, 160);
 }
 
-.title1 {
+.title {
     width: 100vw;
-    font-size: 4rem;
+    font-family: "Inter";
+    font-weight: 400;
     position: absolute;
-    text-align: center;
     top: 280px;
+    left: 15vw;
     color: rgb(255, 255, 255);
+}
+
+.title1 {
+    font-size: min(3rem, 3vw);
+}
+
+.title2 {
+    font-size: min(4rem, 4vw);
+}
+
+.titleImage {
+    height: 500px;
+    position: absolute;
+    top: 140px;
+    right: 15vw;
 }
 
 .writer {
     width: 100vw;
+    font-family: "Inter";
     font-size: 1rem;
     position: absolute;
-    text-align: center;
-    top: 500px;
+    top: 470px;
+    left: 15vw;
     color: rgb(255, 255, 255);
 }
 
 .reviser {
     width: 100vw;
+    font-family: "Inter";
     font-size: 1rem;
     position: absolute;
-    text-align: center;
-    top: 530px;
+    top: 500px;
+    left: 15vw;
     color: rgb(255, 255, 255);
 }
 
@@ -137,6 +155,42 @@
 
 
 @media screen and (max-width: 1000px) {
+    .titleContainer {
+        width: 100vw;
+        height: 50vw;
+    }
+
+    .title {
+        top: calc(140px + 15vw);
+        left: 5vw;
+    }
+
+    .title1 {
+        font-size: 4.5vw;
+    }
+    
+    .title2 {
+        font-size: 6vw
+    }
+
+    .titleImage {
+        height: 40vw;
+        top: calc(140px + 10vw);
+        right: 5vw;
+    }
+
+    .writer {
+        font-size: min(1rem, 2vw);
+        top: calc(140px + 34vw);
+        left: 5vw;
+    }
+
+    .reviser {
+        font-size: min(1rem, 2vw);
+        top: calc(140px + 37vw);
+        left: 5vw;
+    }
+
     .image1 {
         width: 80vw;
     }
