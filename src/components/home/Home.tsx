@@ -36,7 +36,7 @@ export default function Home() {
         <div>
             <Slider {...settings} className={styles.slider}>
                 <div className={styles.backgroundContainer}>
-                    <img className={styles.background} src={process.env.PUBLIC_URL + "/backgrounds/1.png"} />
+                    <img className={styles.background} src={process.env.PUBLIC_URL + "/backgrounds/RubyMine.png"} />
 
                     <div className={styles.korean}>
                         {keywords[0][0]}
@@ -52,7 +52,7 @@ export default function Home() {
                 </div>
 
                 <div className={styles.backgroundContainer}>
-                    <img className={styles.background} src={process.env.PUBLIC_URL + "/backgrounds/2.png"} />
+                    <img className={styles.background} src={process.env.PUBLIC_URL + "/backgrounds/GoLand.png"} />
 
                     <div className={styles.korean}>
                         {keywords[1][0]}
@@ -68,7 +68,7 @@ export default function Home() {
                 </div>
 
                 <div className={styles.backgroundContainer}>
-                    <img className={styles.background} src={process.env.PUBLIC_URL + "/backgrounds/3.png"} />
+                    <img className={styles.background} src={process.env.PUBLIC_URL + "/backgrounds/Kotlin.png"} />
 
                     <div className={styles.korean}>
                         {keywords[2][0]}
