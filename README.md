@@ -9,7 +9,8 @@
 #### This project was created to introduce my personal portfolios and projects. Also, it aims to increase front-end skills by using TypeScript Programming Language and React Framework together.
 
 #### You can check the current progress of the project by accessing the site below.
-### [archiveeng.site](https://archiveeng.site/)
+### [archiveeng.com](https://archiveeng.com/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b96b2289-8745-4778-a322-4bc61bb396ee/deploy-status)](https://app.netlify.com/sites/archive-eng/deploys)
 <br><br><br>
 
 
