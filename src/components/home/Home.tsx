@@ -34,6 +34,14 @@ export default function Home() {
 
     return (
         <div>
+            <div className={styles.textTop}>
+                안녕하세요. 저는
+            </div>
+
+            <div className={styles.textBottom}>
+                하는 개발자 입니다.
+            </div>
+
             <Slider {...settings} className={styles.slider}>
                 <div className={styles.backgroundContainer}>
                     <img className={styles.background} src={process.env.PUBLIC_URL + "/backgrounds/RubyMine.png"} />

@@ -13,10 +13,12 @@
 
 .korean {
     width: 100vw;
-    font-size: 4rem;
+    height: 80px;
+    line-height: 80px;
+    font-size: 6rem;
     font-weight: 1000;
     position: absolute;
-    top: 40vh;
+    top: calc(50vh - 130px);
     left: 0;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -24,9 +26,11 @@
 
 .hanja {
     width: 100vw;
+    height: 100px;
+    line-height: 40px;
     font-size: 2rem;
     position: absolute;
-    top: 48vh;
+    top: calc(50vh - 40px);
     left: 0;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -47,8 +51,22 @@
     -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
 }
 
-.english:after {
-    content: "";
-    display: inline-block;
+.textTop {
     width: 100vw;
+    font-size: 1.5rem;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.textBottom {
+    width: 100vw;
+    font-size: 1.5rem;
+    text-align: center;
+    position: absolute;
+    bottom: 150px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
 }
