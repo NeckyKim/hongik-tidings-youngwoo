@@ -8,7 +8,7 @@ import styles from './Articles.module.css'
 export default function Articles() {
     return (
         <div className={styles.buttonContainer}>
-            {/* <Button id={articlesDatabase[0].id} section={articlesDatabase[0].section} title={articlesDatabase[0].title} year={articlesDatabase[0].year} month={articlesDatabase[0].month} /> */}
+            <Button id={articlesDatabase[0].id} section={articlesDatabase[0].section} title={articlesDatabase[0].title} year={articlesDatabase[0].year} month={articlesDatabase[0].month} />
 
             {/* <Button id={articlesDatabase[1].id} section={articlesDatabase[1].section} title={articlesDatabase[1].title} year={articlesDatabase[1].year} month={articlesDatabase[1].month} /> */}
 

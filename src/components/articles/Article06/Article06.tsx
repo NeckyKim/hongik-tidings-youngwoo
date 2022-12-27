@@ -49,12 +49,12 @@ export default function Article06() {
 
             <div className={styles.title}>
                 <div className={styles.title1}>
-                Information About
+                    Information About
                 </div>
 
                 <div className={styles.title2}>
-                COVID-19 Test Kits
-                </div>               
+                    COVID-19 Test Kits
+                </div>
             </div>
 
             <div className={styles.writer}>
@@ -127,27 +127,23 @@ export default function Article06() {
                 Proper Ways to Use Self-test Kit
             </div>
 
-            <div className={styles.sliderContainer}>
+            <Slider {...settings} className={styles.sliderContainer}>
+                <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-1.png"} />
 
+                <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-2.png"} />
 
-                <Slider {...settings}>
-                    <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-1.png"} />
+                <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-3.png"} />
 
-                    <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-2.png"} />
+                <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-4.png"} />
 
-                    <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-3.png"} />
+                <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-5.png"} />
 
-                    <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-4.png"} />
+                <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-6.png"} />
 
-                    <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-5.png"} />
+                <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-7.png"} />
 
-                    <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-6.png"} />
-
-                    <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-7.png"} />
-
-                    <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-8.png"} />
-                </Slider>
-            </div>
+                <img className={styles.sliderImage} src={process.env.PUBLIC_URL + "/articles/6/3-8.png"} />
+            </Slider>
 
             <div className={articleStyles.source}>
                 (Source) Korean Government Briefing Official Website, www.korea.kr
@@ -267,9 +263,6 @@ export default function Article06() {
                     <img className={styles.questionAnswerImage} src={process.env.PUBLIC_URL + "/articles/6/4-2.png"} />
                 </div>
             </div>
-
-
-
             <Banner year={articleInfo.year} month={articleInfo.month} chiefEditor={articleInfo.chiefEditor} keyword={articleInfo.keyword} link={articleInfo.link} />
         </div>
     )

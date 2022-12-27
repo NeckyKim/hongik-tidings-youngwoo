@@ -9,6 +9,7 @@ import HeaderTop from './components/header/HeaderTop';
 import Footer from './components/footer/Footer';
 import NotFound from './components/notFound/NotFound';
 
+import Article01 from './components/articles/Article01/Article01';
 import Article03 from './components/articles/Article03/Article03';
 import Article05 from './components/articles/Article05/Article05';
 import Article06 from './components/articles/Article06/Article06';
@@ -35,6 +36,7 @@ function App() {
                     <Route path="/achievements" element={<Achievements />} />
                     <Route path="/aboutme" element={<AboutMe />} />
 
+                    <Route path="/articles/1" element={<Article01 />} />
                     <Route path="/articles/3" element={<Article03 />} />
                     <Route path="/articles/5" element={<Article05 />} />
                     <Route path="/articles/6" element={<Article06 />} />

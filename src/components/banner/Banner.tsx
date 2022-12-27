@@ -4,17 +4,14 @@ import styles from './Banner.module.css';
 
 
 
-type BannerProps = {
+export default function Banner({ year, month, chiefEditor, keyword, link }: {
     year: number,
     month: number,
     chiefEditor: string,
     keyword: string,
     link: string
 }
-
-
-
-export default function Banner(props: BannerProps) {
+) {
     const [width, setWidth] = useState<number>(window.innerWidth);
 
     useEffect(() => {
@@ -29,14 +26,14 @@ export default function Banner(props: BannerProps) {
                 <div />
 
                 <div className={styles.yearMonth}>
-                    {props.year}.{props.month}
+                    {year}.{month}
                 </div>
 
                 <div className={styles.keyword}>
-                    {props.keyword}
+                    {keyword}
                 </div>
 
-                <button className={styles.eBookButton} onClick={() => { window.open(props.link) }}>
+                <button className={styles.eBookButton} onClick={() => { window.open(link) }}>
                     View e-Book
                 </button>
             </div>
@@ -48,7 +45,7 @@ export default function Banner(props: BannerProps) {
     function BannerBottomRight() {
         return (
             <div className={styles.bannerBottomRight}>
-                <img className={styles.cover} src={process.env.PUBLIC_URL + "/covers/" + props.year + "-" + props.month + ".png"} />
+                <img className={styles.cover} src={process.env.PUBLIC_URL + "/covers/" + year + "-" + month + ".png"} />
 
                 <img className={styles.tidings} src={process.env.PUBLIC_URL + "/logos/tidings.png"} />
             </div>

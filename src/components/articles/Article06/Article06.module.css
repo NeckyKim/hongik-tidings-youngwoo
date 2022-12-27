@@ -6,7 +6,7 @@
 }
 
 .title {
-    width: 100vw;
+    width: 85vw;
     font-family: "Inter";
     font-weight: 400;
     position: absolute;
@@ -16,10 +16,12 @@
 }
 
 .title1 {
+    width: fit-content;
     font-size: min(3rem, 3vw);
 }
 
 .title2 {
+    width: fit-content;
     font-size: min(4rem, 4vw);
 }
 
@@ -31,7 +33,7 @@
 }
 
 .writer {
-    width: 100vw;
+    width: 85vw;
     font-family: "Inter";
     font-size: 1rem;
     position: absolute;
@@ -41,7 +43,7 @@
 }
 
 .reviser {
-    width: 100vw;
+    width: 85vw;
     font-family: "Inter";
     font-size: 1rem;
     position: absolute;
