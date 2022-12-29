@@ -123,11 +123,11 @@
 }
 
 .career {
-    width: 400px;
+    width: 390px;
     margin: 0px auto;
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 160px 220px;
+    grid-template-columns: 160px 1fr;
 }
 
 .iconContainerWrapper {

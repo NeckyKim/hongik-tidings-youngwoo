@@ -89,16 +89,6 @@ export default function AboutMe() {
 
             <div className={styles.career}>
                 <div>
-                    2018.8 ~ 2020.6
-                </div>
-
-                <div>
-                    대한민국 공군 병장 만기전역
-                </div>
-            </div>
-
-            <div className={styles.career}>
-                <div>
                     2021.8 ~
                 </div>
 
