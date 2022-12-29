@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Keywords from '../Keywords';
 import styles from './AboutMe.module.css';
 
 
@@ -52,12 +53,25 @@ export default function AboutMe() {
 
 
 
+            <div className={styles.keywords}>
+                <Keywords keywords={["성장", "도전", "노력"]}/>
+            </div>
+
+            <div className={styles.name}>
+                김영우
+            </div>
+
+            <div className={styles.ajaeGag}>
+                제 이름은 똑바로 읽으면 김영우, 거꾸로 읽으면 우영김입니다.
+            </div>
+
+
             <div className={styles.intro1}>
                 Frontend Engineer
             </div>
 
             <div className={styles.intro2}>
-                설계와 구현 뿐만아니라, 디자인도 조금 할 줄 아는 공대생
+                설계와 구현 그리고 디자인도 조금 할 줄 아는 공대생
             </div>
             <br /><br /><br />
 
@@ -79,13 +93,13 @@ export default function AboutMe() {
                 </div>
 
                 <div>
-                    대한민국 공군 병역 의무 수행
+                    대한민국 공군 병장 만기전역
                 </div>
             </div>
 
             <div className={styles.career}>
                 <div>
-                    2017.3 ~
+                    2021.4 ~ 2021.8
                 </div>
 
                 <div>
@@ -95,7 +109,7 @@ export default function AboutMe() {
 
             <div className={styles.career}>
                 <div>
-                    2021.4 ~ 2021.8
+                    2021.8 ~
                 </div>
 
                 <div>

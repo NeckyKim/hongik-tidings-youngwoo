@@ -19,13 +19,13 @@ type BadgeProps = {
 
 
 
-function Badge(props: BadgeProps) {
+function Badge({section}: BadgeProps) {
     return (
         <div className={styles.badgeContainer}>
-            <img className={styles.badgeIcon} src={process.env.PUBLIC_URL + "/sections/" + props.section + ".png"} />
+            <img className={styles.badgeIcon} src={process.env.PUBLIC_URL + "/sections/" + section + ".png"} />
 
             <div className={styles.badgeText}>
-                {props.section}
+                {section}
             </div>
         </div>
     )
@@ -53,21 +53,21 @@ function MonthTranslator(month: number) {
 
 
 
-export default function Button(props: ButtonProps) {
+export default function Button({id, section, title, year, month}: ButtonProps) {
     return (
-        <Link to={"/articles/" + String(props.id)} className={styles.button}>
-            <img className={styles.buttonImage} src={process.env.PUBLIC_URL + "/articles/" + props.id + "/title.png"} />
+        <Link to={"/articles/" + String(id)} className={styles.button}>
+            <img className={styles.buttonImage} src={process.env.PUBLIC_URL + "/articles/" + id + "/title.png"} />
 
             <div className={styles.buttonInfo}>
                 <div className={styles.title}>
-                    {props.title}
+                    {title}
                 </div>
 
                 <div className={styles.date}>
-                    {MonthTranslator(props.month)} {props.year}
+                    {MonthTranslator(month)} {year}
                 </div>
 
-                <Badge section={props.section} />
+                <Badge section={section} />
             </div>
         </Link>
     )

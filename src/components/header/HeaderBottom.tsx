@@ -4,13 +4,7 @@ import styles from './HeaderBottom.module.css';
 
 
 
-type HeaderBottomProps = {
-    title: string
-}
-
-
-
-export default function HeaderBottom(props: HeaderBottomProps) {
+export default function HeaderBottom({title}: {title: string}) {
     const [scrollPosition, setScrollPosition] = useState<number>(0);
 
     useEffect(() => {
@@ -25,7 +19,7 @@ export default function HeaderBottom(props: HeaderBottomProps) {
         <div>
             <div className={scrollPosition < 10 ? styles.notScrolled : styles.scrolled}>
                 <div className={styles.text}>
-                    {props.title}
+                    {title}
                 </div>
 
                 <div

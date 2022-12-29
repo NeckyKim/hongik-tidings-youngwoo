@@ -10,7 +10,7 @@ export default function Footer() {
     return (
         <div className={styles.footerContainer}>
             <div className={styles.information}>
-                Information
+                Contact
             </div>
 
             <div className={styles.name}>
@@ -38,11 +38,11 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className={styles.elements} onClick={() => { window.open("https://www.linkedin.com/in/young-woo-kim-493463246/") }}>
+            <div className={styles.elements} onClick={() => { window.open("https://www.linkedin.com/in/kyeryoong/") }}>
             <img  className={styles.elementsImage} src={process.env.PUBLIC_URL + "/logos/linkedin.png"} />
 
                 <div className={styles.elementsText}>
-                    linkedin.com/in/young-woo-kim
+                    linkedin.com/in/kyeryoong
                 </div>
             </div>
 
