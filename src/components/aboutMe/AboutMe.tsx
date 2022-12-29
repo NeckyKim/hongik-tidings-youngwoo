@@ -99,21 +99,11 @@ export default function AboutMe() {
 
             <div className={styles.career}>
                 <div>
-                    2021.4 ~ 2021.8
-                </div>
-
-                <div>
-                    홍익대학교 영자신문사 수습기자
-                </div>
-            </div>
-
-            <div className={styles.career}>
-                <div>
                     2021.8 ~
                 </div>
 
                 <div>
-                    홍익대학교 영자신문사 정기자
+                    홍익대학교 영자신문사 기자
                 </div>
             </div>
 
