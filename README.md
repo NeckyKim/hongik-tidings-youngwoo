@@ -50,7 +50,7 @@
 #### Domain Name Service
 <br/>
 <p align="center">
-<img src="./public/softwares/gabia.png" height="60">
+<img src="./public/softwares/hostingkr.png" height="30">
 </p>
 <br>
 
