@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import HeaderBottom from '../../header/HeaderBottom';
 import Banner from '../../banner/Banner';
 import GetArticleInfo from '../../hooks/GetArticleInfo';
@@ -30,9 +32,52 @@ export default function Article01() {
 
 
 
+    const [explanation, setExplanation] = useState<number>(0);
+
+
     return (
         <div>
             <HeaderBottom title={articleInfo.title} />
+
+
+
+            <div className={styles.titleText}>
+                ecopolis
+            </div>
+
+            <div className={styles.titleContainer}>
+                <div className={styles.titleImageContainer1}>
+                    <img src={process.env.PUBLIC_URL + "/articles/1/title.png"} />
+                </div>
+                
+                <div className={styles.titleImageContainer2}>
+                    <img src={process.env.PUBLIC_URL + "/articles/1/4-2.png"} />
+                </div>
+
+                <div className={styles.titleImageContainer3}>
+                    <img src={process.env.PUBLIC_URL + "/articles/1/4-4.jpg"} />
+                </div>
+
+                <div className={styles.titleImageContainer4}>
+                    <img src={process.env.PUBLIC_URL + "/articles/1/4-3.jpg"} />
+                </div>
+
+                <div className={styles.titleImageContainer5}>
+                    <img src={process.env.PUBLIC_URL + "/articles/1/title.png"} />
+                </div>
+            </div>
+
+            <div className={styles.writerReviserContainer}>
+                <div className={styles.writer}>
+                    Written by Kim Young-Woo
+                </div>
+
+                <div className={styles.reviser}>
+                    Revised by Prof. Neil Alexander Cole
+                </div>
+            </div>
+
+
 
             <div className={articleStyles.paragraph}>
                 Humans have grown through rapid industrialization, but at the same time nature is being destroyed and earth is becoming difficult to live due to polluted air, water, and soil. As we only looked for our convenience and used resources thoughtlessly, warning signals from all over the world are being heard such as global warming, destruction of ozone layer, air pollution, and other abnormal weather phenomena. Not until 21st century, we have recognized the seriousness of environmental problems and many efforts are being made from all over the world to solve these problems.
@@ -218,121 +263,141 @@ export default function Article01() {
 
 
 
-            <div className={styles.imageContainer}>
-                <div className={styles.imageContainerLeft}>
-                    <img className={styles.image1} src={process.env.PUBLIC_URL + "/articles/1/5.png"} />
-                </div>
+            <div className={styles.architectureImageContainer} onMouseLeave={() => { setExplanation(0); }}>
+                <img className={styles.architectureImage} src={process.env.PUBLIC_URL + "/articles/1/5.png"} />
 
-                <div className={styles.indicator1}>1</div>
-                <div className={styles.indicator2}>2</div>
-                <div className={styles.indicator3}>3</div>
-                <div className={styles.indicator4}>4</div>
-                <div className={styles.indicator5}>5</div>
-                <div className={styles.indicator6}>6</div>
-                <div className={styles.indicator7}>7</div>
+                <div className={styles.indicator1} onMouseEnter={() => { setExplanation(1); }}>1</div>
+                <div className={styles.indicator2} onMouseEnter={() => { setExplanation(2); }}>2</div>
+                <div className={styles.indicator3} onMouseEnter={() => { setExplanation(3); }}>3</div>
+                <div className={styles.indicator4} onMouseEnter={() => { setExplanation(4); }}>4</div>
+                <div className={styles.indicator5} onMouseEnter={() => { setExplanation(5); }}>5</div>
+                <div className={styles.indicator6} onMouseEnter={() => { setExplanation(6); }}>6</div>
+                <div className={styles.indicator7} onMouseEnter={() => { setExplanation(7); }}>7</div>
+            </div>
 
+            <div className={styles.explanationContainer}>
+                {
+                    explanation === 0
 
+                    &&
 
-                <div className={styles.imageContainerRight}>
-                    <div className={styles.explanation1}>
-                        <div className={styles.explanationNumber1}>1</div>
+                    <div className={styles.explanationNone}>
+                        You can see the explanation by clicking the number.
+                    </div>
+                }
 
-                        <div className={styles.explanationContainer}>
-                            <div className={styles.explanationHeader}>
-                                Wind Cowls
-                            </div>
+                {
+                    explanation === 1
 
-                            <div className={styles.explanationText}>
-                                wind driven cowls will generate electricity during the day.
-                            </div>
+                    &&
+
+                    <div>
+                        <div className={styles.explanationHeader}>
+                            Wind Cowls
+                        </div>
+
+                        <div className={styles.explanationText}>
+                            wind driven cowls will generate electricity during the day.
                         </div>
                     </div>
+                }
 
-                    <div className={styles.explanation2}>
-                        <div className={styles.explanationNumber2}>2</div>
+                {
+                    explanation === 2
 
-                        <div className={styles.explanationContainer}>
-                            <div className={styles.explanationHeader}>
-                                Roof Top energy
-                            </div>
+                    &&
 
-                            <div className={styles.explanationText}>
-                                includes photovoltaic cells, solar hot water panels, a gas-fired co-generation
-                                plant and wind powered turbines.
-                            </div>
+                    <div>
+                        <div className={styles.explanationHeader}>
+                            Roof Top energy
+                        </div>
+
+                        <div className={styles.explanationText}>
+                            includes photovoltaic cells, solar hot water panels, a gas-fired co-generation
+                            plant and wind powered turbines.
                         </div>
                     </div>
+                }
 
-                    <div className={styles.explanation3}>
-                        <div className={styles.explanationNumber3}>3</div>
+                {
+                    explanation === 3
 
-                        <div className={styles.explanationContainer}>
-                            <div className={styles.explanationHeader}>
-                                Exhaust
-                            </div>
+                    &&
 
-                            <div className={styles.explanationText}>
-                                high level ceiling exhaust ensures complete emptying of warm air in ceiling spaces.
-                            </div>
+                    <div>
+                        <div className={styles.explanationHeader}>
+                            Exhaust
+                        </div>
+
+                        <div className={styles.explanationText}>
+                            high level ceiling exhaust ensures complete emptying of warm air in ceiling spaces.
                         </div>
                     </div>
+                }
 
-                    <div className={styles.explanation4}>
-                        <div className={styles.explanationNumber4}>4</div>
+                {
+                    explanation === 4
 
-                        <div className={styles.explanationContainer}>
-                            <div className={styles.explanationHeader}>
-                                Healthy Air
-                            </div>
+                    &&
 
-                            <div className={styles.explanationText}>
-                                100% outside air supply via vertical ducts deliver air floor by floor to sealed access floor plenum.
-                            </div>
+                    <div>
+                        <div className={styles.explanationHeader}>
+                            Healthy Air
+                        </div>
+
+                        <div className={styles.explanationText}>
+                            100% outside air supply via vertical ducts deliver air floor by floor to sealed access floor plenum.
                         </div>
                     </div>
+                }
 
-                    <div className={styles.explanation5}>
-                        <div className={styles.explanationNumber5}>5</div>
+                {
+                    explanation === 5
 
-                        <div className={styles.explanationContainer}>
-                            <div className={styles.explanationHeader}>
-                                Chilled Ceilings
-                            </div>
+                    &&
 
-                            <div className={styles.explanationText}>
-                                occupants experience ‘coolth’ by radiating heat to chilled ceilings overhead.
-                            </div>
+                    <div>
+                        <div className={styles.explanationHeader}>
+                            Chilled Ceilings
+                        </div>
+
+                        <div className={styles.explanationText}>
+                            occupants experience ‘coolth’ by radiating heat to chilled ceilings overhead.
                         </div>
                     </div>
+                }
 
-                    <div className={styles.explanation6}>
-                        <div className={styles.explanationNumber6}>6</div>
+                {
+                    explanation === 6
 
-                        <div className={styles.explanationContainer}>
-                            <div className={styles.explanationHeader}>
-                                Shower Towers
-                            </div>
+                    &&
 
-                            <div className={styles.explanationText}>
-                                air and water falls to provide cool water for building reticulation and cool air to supplement ground floor and retail cooling.
-                            </div>
+                    <div>
+                        <div className={styles.explanationHeader}>
+                            Shower Towers
+                        </div>
+
+                        <div className={styles.explanationText}>
+                            air and water falls to provide cool water for building reticulation and cool air to supplement ground floor and retail cooling.
                         </div>
                     </div>
+                }
 
-                    <div className={styles.explanation7}>
-                        <div className={styles.explanationNumber7}>7</div>
+                {
+                    explanation === 7
 
-                        <div className={styles.explanationContainer}>
-                            <div className={styles.explanationHeader}>
-                                Phase Change Material
-                            </div>
+                    &&
 
-                            <div className={styles.explanationText}>
-                                water is piped to phase change plant for re-cooling.
-                            </div>
+                    <div>
+                        <div className={styles.explanationHeader}>
+                            Phase Change Material
+                        </div>
+
+                        <div className={styles.explanationText}>
+                            water is piped to phase change plant for re-cooling.
                         </div>
                     </div>
-                </div>
+                }
             </div>
 
 
@@ -345,13 +410,16 @@ export default function Article01() {
                 As a result, the power used for heating and cooling in Council House 2 of Melbourne City is less than 10% compared to other buildings. In Australia where the highest temperature is 38 degrees, the building is maintained about 24 degrees without using any cooling and heating systems. Also, it’s the first building to receive six green stars, which is the highest rating evaluated by Green Building Council Australia.
             </div>
 
-            <img className={styles.image2} src={process.env.PUBLIC_URL + "/articles/1/6.png"} />
+            <img className={styles.greenStarImage} src={process.env.PUBLIC_URL + "/articles/1/6.png"} />
 
 
 
             <div className={articleStyles.conclusion}>
                 Earth is like a home to us. Humans and earth have been coexisted, is coexisting, and should coexist. For the ecosystem that has been damaged by mankind, we should start to solve our own environmental problems. In order for all creatures to coexist, we must make efforts to solve these problems. Why don’t we start doing what we can to reduce energy use, like ecopolis and eco-friendly buildings? Just as small changes lead to big changes, our small moves to protect sick earth and planet will come as a big result.
             </div>
+
+
+
             <Banner year={articleInfo.year} month={articleInfo.month} chiefEditor={articleInfo.chiefEditor} keyword={articleInfo.keyword} link={articleInfo.link} />
         </div>
     )
