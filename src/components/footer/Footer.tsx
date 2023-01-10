@@ -30,16 +30,16 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className={styles.elements} onClick={() => { window.open("https://github.com/NeckyKim") }}>
-            <img className={styles.elementsImage} src={process.env.PUBLIC_URL + "/logos/github.png"} />
+            <div className={styles.elements} onClick={() => { window.open("https://github.com/kyeryoong") }}>
+                <img className={styles.elementsImage} src={process.env.PUBLIC_URL + "/logos/github.png"} />
 
                 <div className={styles.elementsText}>
-                    github.com/NeckyKim
+                    github.com/kyeryoong
                 </div>
             </div>
 
             <div className={styles.elements} onClick={() => { window.open("https://www.linkedin.com/in/kyeryoong/") }}>
-            <img  className={styles.elementsImage} src={process.env.PUBLIC_URL + "/logos/linkedin.png"} />
+                <img className={styles.elementsImage} src={process.env.PUBLIC_URL + "/logos/linkedin.png"} />
 
                 <div className={styles.elementsText}>
                     linkedin.com/in/kyeryoong
