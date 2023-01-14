@@ -25,8 +25,22 @@ export default function Footer() {
             <div className={styles.elements}>
                 <img className={styles.elementsImage} src={process.env.PUBLIC_URL + "/logos/email.png"} />
 
-                <div className={styles.elementsText}>
-                    kyeryoong@gmail.com
+                <div className={styles.elementsTextE}>
+                    <div>
+                        kyeryoong
+                    </div>
+                    
+                    <img className={styles.elementsImageE} src={process.env.PUBLIC_URL + "/logos/at.png"} />
+
+                    <div>
+                        gmail
+                    </div>
+
+                    <img className={styles.elementsImageD} src={process.env.PUBLIC_URL + "/logos/dot.png"} />
+
+                    <div>
+                        com
+                    </div>
                 </div>
             </div>
 
