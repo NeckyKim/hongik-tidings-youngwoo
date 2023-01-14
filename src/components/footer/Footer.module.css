@@ -45,15 +45,16 @@
 .elementsImageE {
     width: 30px;
     padding: 7px;
-    margin-left: -5px;
+    margin-top: 1px;
+    margin-left: -6px;
     margin-right: -5px;
 }
 
 .elementsImageD {
     width: 30px;
-    padding: 10px;
-    margin-top: 3px;
-    margin-left: -12.5px;
+    padding: 11px;
+    margin-top: 6px;
+    margin-left: -12px;
     margin-right: -12.5px;
 }
 
@@ -65,6 +66,8 @@
 }
 
 .elementsTextE {
+    height: 30px;
+    line-height: 30px;
     font-size: 1.2rem;
     color: rgb(180, 180, 180);
     display: grid;
