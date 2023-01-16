@@ -36,7 +36,9 @@ export default function Footer() {
                         gmail
                     </div>
 
-                    <img className={styles.elementsImageD} src={process.env.PUBLIC_URL + "/logos/dot.png"} />
+                    <div className={styles.elementsImageD}>
+                        ．
+                    </div>
 
                     <div>
                         com
